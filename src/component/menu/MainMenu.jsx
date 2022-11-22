@@ -66,7 +66,8 @@ function MainMenu() {
             </Menu>
           </Box>
           {/* ---------------------logo Box ---------------------- */}
-          <Box sx={{ flexGrow: 0,backgroundColor: "darkblue", width:{xs:"100%",sm:"15%"} }}>JAC</Box>
+
+          <LOGO />
           {/* --------------------Desk top -menu Box Menu ---------------------- */}
           <Box
             sx={{
@@ -90,10 +91,37 @@ function MainMenu() {
           </Box>
 
           {/* ---------------------Language Box ---------------------- */}
-          <Box sx={{ flexGrow: 0, width: "15%" }}>language</Box>
+          <Language />
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
 export default MainMenu;
+
+const LOGO = () => {
+  return (
+    <>
+      <Box
+        sx={{
+          flexGrow: 1,
+          backgroundColor: "darkblue",
+          width: { xs: "100%", sm: "15%" },
+          my: 2
+        }}
+      >
+        JAC
+      </Box>
+    </>
+  );
+};
+
+const Language = () => {
+  return (
+    <>
+      <Box sx={{ flexGrow: 1, width: "15%", backgroundColor: "green", my: 2 }}>
+        LN
+      </Box>
+    </>
+  );
+};
