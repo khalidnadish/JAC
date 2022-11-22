@@ -22,18 +22,20 @@ const Container = styled.div`
   min-width: 300px;
   width: 100%;
   max-height: 100vh;
+  height: 100%;
   background-color: ${({ theme }) => theme.bgLighter};
+
 `;
 
 const BodyWrapper = styled.div`
   display: flex;
   width: 100%;
+  color: ${({ theme }) => theme.text};
   background-color: ${({ theme }) => theme.bgLighter};
-
+  padding: 10px 20px;
   @media (max-width: 500px) {
     padding: 10px 20px;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
   }
 `;
@@ -42,7 +44,7 @@ const BodyWrapper = styled.div`
 function App() {
   
 
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [open, setOpen] = useState(false);
 
   return (
