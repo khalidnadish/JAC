@@ -72,7 +72,6 @@ function MainMenu() {
           <Box
             sx={{
               flexGrow: 1,
-              backgroundColor: "red",
               display: { xs: "none", sm: "flex" },
               justifyContent: "center",
               alignItems: "center",
@@ -98,24 +97,24 @@ function MainMenu() {
   );
 }
 export default MainMenu;
-
+/* ------------------------------------------------------ */
 const LOGO = () => {
   return (
     <>
       <Box
         sx={{
           flexGrow: 1,
-          backgroundColor: "darkblue",
+          // backgroundColor: "darkblue",
           width: { xs: "100%", sm: "15%" },
           my: 2
         }}
       >
-        JAC
+        <img src={"/logo.png"} width={"100"} loading={"lazy"}/>
       </Box>
     </>
   );
 };
-
+/* ------------------------------------------------------ */
 const Language = () => {
   return (
     <>
