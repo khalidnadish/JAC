@@ -1,6 +1,6 @@
 [
-  { "id": 1, "name": "About", "icon": "" },
-  { "id": 2, "name": "Producet", "icon": "" },
-  { "id": 3, "name": "Spare Part", "icon": "" },
-  { "id": 4, "name": "Contact", "icon": "" }
+  { "id": 1, "name": "About", "icon": "","link":"/about" },
+  { "id": 2, "name": "Producet", "icon": "","link":"/product" },
+  { "id": 3, "name": "Spare Part", "icon": "","link":"/parePart" },
+  { "id": 4, "name": "Contact", "icon": "","link":"/contact" }
 ]

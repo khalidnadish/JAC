@@ -1,4 +1,5 @@
-import * as React from "react";
+import React,{useState} from "react";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,11 +12,14 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import menuItem from "./menu.json";
 
-const pages = menuItem.map((el) => el.name);
+
+// const pages = menuItem.map((el) => el.name);
+const pages =menuItem
+console.log(pages)
 
 function MainMenu() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-
+  const [anchorElNav, setAnchorElNav] = useState(null);
+const [language,setLanguage] = useState("/ar.png");
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -59,14 +63,16 @@ function MainMenu() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem  component={Link}
+                to={page.link} key={page.id} onClick={handleCloseNavMenu}>
+                    
+                  <Typography textAlign="center">{page.name}</Typography>
+                 
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           {/* ---------------------logo Box ---------------------- */}
-
           <LOGO />
           {/* --------------------Desk top -menu Box Menu ---------------------- */}
           <Box
@@ -79,18 +85,22 @@ function MainMenu() {
             }}
           >
             {pages.map((page) => (
+              // <Link to={page.link} underline={"none"}>
               <Button
-                key={page}
+                component={Link}
+                to={page.link}
+                key={page.id}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                {page.name}
               </Button>
+              // </Link>
             ))}
           </Box>
 
           {/* ---------------------Language Box ---------------------- */}
-          <Language />
+          <Language language={language} setLanguage={setLanguage} />
         </Toolbar>
       </Container>
     </AppBar>
@@ -115,11 +125,16 @@ const LOGO = () => {
   );
 };
 /* ------------------------------------------------------ */
-const Language = () => {
+const Language = ({language, setLanguage}) => {
   return (
     <>
-      <Box sx={{ flexGrow: 1, width: "15%", backgroundColor: "green", my: 2 }}>
-        LN
+      <Box
+        sx={{ flexGrow: 1, width: "15%" }}
+        onClick={() => {setLanguage(language === "/ar.png" ? "/en.png" : "/ar.png")
+      console.log(language)
+      }}
+      >
+        <img src={language} width={"30"} loading={"lazy"} />
       </Box>
     </>
   );
