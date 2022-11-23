@@ -33,8 +33,6 @@
 body {
   display: flex;
   justify-content: start; 
-  
-  /* gap :2rem; */
   min-width: 98vw;
   width: 100%;
   margin: auto;
@@ -48,7 +46,7 @@ h1 {
 }
 p{
   font-size: 1.1em;
-  line-height: 1.1;
+  line-height: 1.4;
 
 }
 @media screen and (max-width: 500px) {
@@ -61,7 +59,7 @@ p{
   }
   p{
     font-size: .9em;
-    line-height: 1.1;
+    line-height: 1.4;
   
   }
   

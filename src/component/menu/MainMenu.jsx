@@ -29,7 +29,7 @@ function MainMenu({ setLangDirection,language, setLanguage }) {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky" color="warning" sx={{zIndex:100}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* ---------------------Moobilmenu Box Menu ---------------------- */}
@@ -139,18 +139,19 @@ const Language = ({ language, setLanguage, setLangDirection }) => {
       <Box
         sx={{ flexGrow: 1, width: "15%" }}
         onClick={() => {
-          setLanguage(language === "/ar.svg" ? "/en.svg" : "/ar.svg");
+          setLanguage(language === "ar" ? "en" : "ar");
 
-          if (language === "/ar.svg") {
+          if (language === "ar") {
             i18n.changeLanguage("ar");
             setLangDirection("rtl");
+            
           } else {
             i18n.changeLanguage("en");
             setLangDirection("ltr");
           }
         }}
       >
-        <img src={language} width={"30"} loading={"lazy"} />
+        <img src={`/${language}.svg`} width={"30"} loading={"lazy"} />
       </Box>
     </>
   );
