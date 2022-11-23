@@ -137,21 +137,45 @@ const Language = ({ language, setLanguage, setLangDirection }) => {
   return (
     <>
       <Box
-        sx={{ flexGrow: 1, width: "15%" }}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          flexGrow: 1,
+          width: "15%",
+          
+          
+        }}
         onClick={() => {
           setLanguage(language === "ar" ? "en" : "ar");
 
           if (language === "ar") {
             i18n.changeLanguage("ar");
             setLangDirection("rtl");
-            
           } else {
             i18n.changeLanguage("en");
             setLangDirection("ltr");
           }
         }}
       >
+
+<Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+        
+          width: "fit-content",
+          border: ".5px solid rgba(255,255,255,0.4)",
+          padding: "3px",
+          borderRadius: "4px",
+        }}
+       
+      >
+
+
+
+
         <img src={`/${language}.svg`} width={"30"} loading={"lazy"} />
+        </Box>
       </Box>
     </>
   );
