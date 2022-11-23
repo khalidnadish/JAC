@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -11,15 +11,15 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import menuItem from "./menu.json";
-
+import i18n from "../../i18n";
 
 // const pages = menuItem.map((el) => el.name);
-const pages =menuItem
-console.log(pages)
+const pages = menuItem;
+console.log(pages);
 
-function MainMenu() {
+function MainMenu({ setLangDirection,language, setLanguage }) {
   const [anchorElNav, setAnchorElNav] = useState(null);
-const [language,setLanguage] = useState("/ar.png");
+ 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -63,11 +63,13 @@ const [language,setLanguage] = useState("/ar.png");
               }}
             >
               {pages.map((page) => (
-                <MenuItem  component={Link}
-                to={page.link} key={page.id} onClick={handleCloseNavMenu}>
-                    
+                <MenuItem
+                  component={Link}
+                  to={page.link}
+                  key={page.id}
+                  onClick={handleCloseNavMenu}
+                >
                   <Typography textAlign="center">{page.name}</Typography>
-                 
                 </MenuItem>
               ))}
             </Menu>
@@ -100,7 +102,13 @@ const [language,setLanguage] = useState("/ar.png");
           </Box>
 
           {/* ---------------------Language Box ---------------------- */}
-          <Language language={language} setLanguage={setLanguage} />
+          <Language
+            language={language}
+            setLanguage={setLanguage}
+            setLangDirection={setLangDirection}
+           
+          
+          />
         </Toolbar>
       </Container>
     </AppBar>
@@ -116,23 +124,31 @@ const LOGO = () => {
           flexGrow: 1,
           // backgroundColor: "darkblue",
           width: { xs: "100%", sm: "15%" },
-          my: 2
+          my: 2,
         }}
       >
-        <img src={"/logo.png"} width={"100"} loading={"lazy"}/>
+        <img src={"/logo.png"} width={"100"} loading={"lazy"} />
       </Box>
     </>
   );
 };
 /* ------------------------------------------------------ */
-const Language = ({language, setLanguage}) => {
+const Language = ({ language, setLanguage, setLangDirection }) => {
   return (
     <>
       <Box
         sx={{ flexGrow: 1, width: "15%" }}
-        onClick={() => {setLanguage(language === "/ar.png" ? "/en.png" : "/ar.png")
-      console.log(language)
-      }}
+        onClick={() => {
+          setLanguage(language === "/ar.svg" ? "/en.svg" : "/ar.svg");
+
+          if (language === "/ar.svg") {
+            i18n.changeLanguage("ar");
+            setLangDirection("rtl");
+          } else {
+            i18n.changeLanguage("en");
+            setLangDirection("ltr");
+          }
+        }}
       >
         <img src={language} width={"30"} loading={"lazy"} />
       </Box>
