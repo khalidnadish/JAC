@@ -10,14 +10,26 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import menuItem from "./menu.json";
+import menuItem from "./enMenu.json";
+import armenuItem from "./arMenu.json";
 import i18n from "../../i18n";
 
 // const pages = menuItem.map((el) => el.name);
-const pages = menuItem;
-console.log(pages);
+
+// console.log(langx);
+
+
+// console.log(pages);
 
 function MainMenu({ setLangDirection,language, setLanguage }) {
+  let pages = menuItem;
+  
+  if (language === "ar") {
+     pages = armenuItem;
+  } else {
+     pages = menuItem;
+  }
+  console.log(language);
   const [anchorElNav, setAnchorElNav] = useState(null);
  
   const handleOpenNavMenu = (event) => {
@@ -68,8 +80,9 @@ function MainMenu({ setLangDirection,language, setLanguage }) {
                   to={page.link}
                   key={page.id}
                   onClick={handleCloseNavMenu}
+                 
                 >
-                  <Typography textAlign="center">{page.name}</Typography>
+                  <Typography textAlign="left" sx={{ fontFamily:"cb" }}>{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -84,6 +97,7 @@ function MainMenu({ setLangDirection,language, setLanguage }) {
               justifyContent: "center",
               alignItems: "center",
               gap: "1rem",
+              direction:language==="ar"? "rtl":"ltr"
             }}
           >
             {pages.map((page) => (
@@ -93,7 +107,7 @@ function MainMenu({ setLangDirection,language, setLanguage }) {
                 to={page.link}
                 key={page.id}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block" ,fontFamily:"cb"}}
               >
                 {page.name}
               </Button>
@@ -146,7 +160,7 @@ const Language = ({ language, setLanguage, setLangDirection }) => {
           
         }}
         onClick={() => {
-          setLanguage(language === "ar" ? "en" : "ar");
+          setLanguage(pre=>pre === "ar" ? "en" : "ar");
 
           if (language === "ar") {
             i18n.changeLanguage("ar");
@@ -162,7 +176,6 @@ const Language = ({ language, setLanguage, setLangDirection }) => {
         sx={{
           display: "flex",
           justifyContent: "center",
-        
           width: "fit-content",
           border: ".5px solid rgba(255,255,255,0.4)",
           padding: "3px",

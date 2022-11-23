@@ -7,8 +7,8 @@ import './i18n';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Suspense fallback={<p>loadding..</p>}>
-  <React.StrictMode>
+  {/* <React.StrictMode> */}
     <App />
-  </React.StrictMode>
+  {/* </React.StrictMode> */}
   </Suspense>
 )
