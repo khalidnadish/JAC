@@ -1,7 +1,7 @@
 import React from "react";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import cpm from "./productCpm"
+import cpm from "../productCpm"
 
 import { useTranslation } from "react-i18next";
 
@@ -25,13 +25,13 @@ function ProductId() {
   return (
     <>
     <cpm.ProdctPageWraper>
-      <h1>D10</h1>
+      <h1>E1</h1>
       <cpm.SliderWraper>
         <cpm.CpmSlider {...settings}>
-          <cpm.SliderImage src={"/assets/product/D10/1.jpg"} />
-          <cpm.SliderImage src={"/assets/product/D10/2.jpg"} />
-          <cpm.SliderImage src={"/assets/product/D10/3.jpg"} />
-          <cpm.SliderImage src={"/assets/product/D10/4.jpg"} />
+          <cpm.SliderImage src={"/assets/product/E1/1.jpg"} />
+          <cpm.SliderImage src={"/assets/product/E1/2.jpg"} />
+          <cpm.SliderImage src={"/assets/product/E1/3.jpg"} />
+          <cpm.SliderImage src={"/assets/product/E1/4.jpg"} />
         </cpm.CpmSlider>
     {/* ---------------------------- */}
       </cpm.SliderWraper>

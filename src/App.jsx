@@ -13,16 +13,16 @@ import SparePart from "./pages/SparePart";
 import PageNotFound from "./pages/404/PageNotFound";
 import cookie from "js-cookie";
 import Product from "./pages/product/Product";
-import ProductD1 from "./pages/product/ProductD1";
-import ProductD2 from "./pages/product/ProductD2";
-import ProductD3 from "./pages/product/ProductD3";
-import ProductD4 from "./pages/product/ProductD4";
-import ProductD5 from "./pages/product/ProductD5";
-import ProductD6 from "./pages/product/ProductD6";
-import ProductD7 from "./pages/product/ProductD7";
-import ProductD8 from "./pages/product/ProductD8";
-import ProductD9 from "./pages/product/ProductD9";
-import ProductD10 from "./pages/product/ProductD10";
+import ProductD1 from "./pages/product/dezel/ProductD1";
+import ProductD2 from "./pages/product/dezel/ProductD2";
+import ProductD3 from "./pages/product/dezel/ProductD3";
+import ProductD4 from "./pages/product/dezel/ProductD4";
+import ProductD5 from "./pages/product/dezel/ProductD5";
+import ProductD6 from "./pages/product/dezel/ProductD6";
+import ProductD7 from "./pages/product/dezel/ProductD7";
+import ProductD8 from "./pages/product/dezel/ProductD8";
+import ProductD9 from "./pages/product/dezel/ProductD9";
+import ProductD10 from "./pages/product/dezel/ProductD10";
 
 
 
