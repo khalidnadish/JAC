@@ -8,6 +8,9 @@ import { Button, CardActionArea, CardActions, Chip } from "@mui/material";
 import cpm from "./aboutCpm";
 import { useTranslation } from "react-i18next";
 import prod from "../product/product.json";
+
+
+
 export default function Prodct() {
   const { t } = useTranslation();
 
@@ -18,124 +21,124 @@ export default function Prodct() {
         <cpm.SectionTitle>{t("dezel")}</cpm.SectionTitle>
         <MyCard
           image={prod.D1.aboutPic}
-          title={t("D1.title")}
-          subtitle={t("D1.subtitle")}
+          // title={t("D1.title")}
+          subtitle={prod.D1.name}
           description={t("dezel")}
         />
         <MyCard
-         image={prod.D2.aboutPic}
+          image={prod.D2.aboutPic}
           title={t("D2.title")}
-          subtitle={t("D2.subtitle")}
+          subtitle={prod.D2.name}
           description={t("dezel")}
         />
         <MyCard
-         image={prod.D3.aboutPic}
+          image={prod.D3.aboutPic}
           title={t("D3.title")}
-          subtitle={t("D3.subtitle")}
+          subtitle={prod.D3.name}
           description={t("dezel")}
         />
         <MyCard
-         image={prod.D4.aboutPic}
+          image={prod.D4.aboutPic}
           title={t("D4.title")}
-          subtitle={t("D4.subtitle")}
+          subtitle={prod.D4.name}
           description={t("dezel")}
         />
         <MyCard
           image={prod.D5.aboutPic}
           title={t("D5.title")}
-          subtitle={t("D5.subtitle")}
+          subtitle={prod.D5.name}
           description={t("dezel")}
         />
         <MyCard
           image={prod.D6.aboutPic}
           title={t("D6.title")}
-          subtitle={t("D6.subtitle")}
+          subtitle={prod.D6.name}
           description={t("dezel")}
         />
         <MyCard
-         image={prod.D7.aboutPic}
+          image={prod.D7.aboutPic}
           title={t("D7.title")}
-          subtitle={t("D7.subtitle")}
+          subtitle={prod.D7.name}
           description={t("dezel")}
         />
         <MyCard
-         image={prod.D8.aboutPic}
+          image={prod.D8.aboutPic}
           title={t("D8.title")}
-          subtitle={t("D8.subtitle")}
+          subtitle={prod.D8.name}
           description={t("dezel")}
         />
         <MyCard
           image={prod.D9.aboutPic}
           title={t("D9.title")}
-          subtitle={t("D.subtitle")}
+          subtitle={prod.D9.name}
           description={t("dezel")}
         />
         <MyCard
           image={prod.D10.aboutPic}
           title={t("D10.title")}
-          subtitle={t("D.subtitle")}
+          subtitle={prod.D10.name}
           description={t("dezel")}
         />
-  {/* ------------------------------------------------------------------- */}
+        {/* ------------------------------------------------------------------- */}
         <cpm.SectionTitle>{t("electric")}</cpm.SectionTitle>
         <MyCard
           image={prod.E1.aboutPic}
           title={t("E1.title")}
-          subtitle={t("E1.subtitle")}
+          subtitle={prod.E1.name}
           description={t("electric")}
         />
         <MyCard
           image={prod.E2.aboutPic}
           title={t("E2.title")}
-          subtitle={t("E2.subtitle")}
+          subtitle={prod.E2.name}
           description={t("electric")}
         />
         <MyCard
           image={prod.E3.aboutPic}
           title={t("E3.title")}
-          subtitle={t("E3.subtitle")}
+          subtitle={prod.E3.name}
           description={t("electric")}
         />
         <MyCard
-         image={prod.E4.aboutPic}
+          image={prod.E4.aboutPic}
           title={t("E4.title")}
-          subtitle={t("E4.subtitle")}
+          subtitle={prod.E4.name}
           description={t("electric")}
         />
         <MyCard
           image={prod.E5.aboutPic}
           title={t("E5.title")}
-          subtitle={t("E5.subtitle")}
+          subtitle={prod.E5.name}
           description={t("electric")}
         />
         <MyCard
-         image={prod.E6.aboutPic}
+          image={prod.E6.aboutPic}
           title={t("E6.title")}
-          subtitle={t("E6.subtitle")}
+          subtitle={prod.E6.name}
           description={t("electric")}
         />
         <MyCard
-         image={prod.E7.aboutPic}
+          image={prod.E7.aboutPic}
           title={t("E7.title")}
-          subtitle={t("E7.subtitle")}
+          subtitle={prod.E7.name}
           description={t("electric")}
         />
         <MyCard
           image={prod.E8.aboutPic}
           title={t("E8.title")}
-          subtitle={t("E8.subtitle")}
+          subtitle={prod.E8.name}
           description={t("electric")}
         />
         <MyCard
-           image={prod.E9.aboutPic}
+          image={prod.E9.aboutPic}
           title={t("E9.title")}
-          subtitle={t("E9.subtitle")}
+          subtitle={prod.E9.name}
           description={t("electric")}
         />
         <MyCard
-         image={prod.E10.aboutPic}
+          image={prod.E10.aboutPic}
           title={t("E10.title")}
-          subtitle={t("E10.subtitle")}
+          subtitle={prod.E10.name}
           description={t("electric")}
         />
 

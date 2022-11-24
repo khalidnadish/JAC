@@ -50,436 +50,190 @@ export default ProductId
 const TableVeiw = () => {
     return (
       <>
-        <table
-          style={{
-            width: "100%",
-            padding: "0",
-            margin: "5px 0 9pt",
-            borderSpacing: "1px",
-            borderCollapse: "separate",
-            border: "1px solid",
-          }}
-        >
-          <tbody>
-            <tr>
-              <td colSpan="3" nowrap="">
-                Model
-              </td>
-              <td nowrap=""> CPCD20H </td>
-              <td nowrap=""> CPCD25H </td>
-            </tr>
-            <tr>
-              
-              <td rowSpan="14"> Features </td>
-              <td colSpan="2" nowrap="">
-                Power type
-              </td>
-              <td colSpan="2" nowrap="">
-                Diesel
-              </td>
-            </tr>
-            <tr>
-              <td colSpan="2" nowrap="">
-                Rated load（kg）
-              </td>
-              <td nowrap=""> 2000 </td> <td nowrap=""> 2500 </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Load center distance（mm）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                500
-              </td>
-            </tr>
-            <tr>
-              <td colSpan="2" nowrap="">
-                
-                Lift height（mm）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                3000
-              </td>
-            </tr>
-            <tr>
-              <td colSpan="2" nowrap="">
-                
-                Free lift height（mm）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                140
-              </td>
-            </tr>
-            <tr>
-              <td nowrap=""> Fork size </td>
-              <td nowrap=""> L×W×T（mm） </td>
-              <td colSpan="2" nowrap="">
-                
-                1070×122×40
-              </td>
-            </tr>
-            <tr>
-              <td nowrap=""> Mast tilt angle </td>
-              <td nowrap=""> Front/Rear </td>
-              <td colSpan="2" nowrap="">
-                
-                6°/12°
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Minimum turning radius（mm）
-              </td>
-              <td nowrap=""> 2170 </td> <td nowrap=""> 2230 </td>
-            </tr>
-            <tr>
-              <td colSpan="2" nowrap="">
-                
-                Minimum right angle stacking aisle width（mm）
-              </td>
-              <td nowrap=""> 3635 </td>
-              <td nowrap=""> 3695 </td>
-            </tr>
-            <tr>
-              <td colSpan="2" nowrap="">
-                
-                Minimum right angle aisle width（mm）
-              </td>
-              <td nowrap=""> 2370 </td>
-              <td nowrap=""> 2430 </td>
-            </tr>
-            <tr>
-              <td rowSpan="2"> Minimum ground clearance </td>
-              <td nowrap=""> Frame center(no load)（mm） </td>
-              <td colSpan="2" nowrap="">
-                
-                115
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Mast Bottom（no load）（mm） </td>
-              <td colSpan="2" nowrap="">
-                
-                110
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Height of overhead guard（mm）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                2070
-              </td>
-            </tr>
-            <tr>
-              <td colSpan="2" nowrap="">
-                
-                Overhang (FR)（mm）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                465
-              </td>
-            </tr>
-            <tr>
-              <td rowSpan="6"> Performance </td>
-              <td rowSpan="2"> Maximum travel speed </td>
-              <td nowrap=""> Full load（km/h） </td>
-              <td colSpan="2" nowrap="">
-                
-                18
-              </td>
-            </tr>
-            <tr>
-              <td nowrap=""> No load（km/h） </td>
-              <td colSpan="2" nowrap="">
-                
-                18
-              </td>
-            </tr>
-            <tr>
-              
-              <td rowSpan="2"> Maximum lift speed </td>
-              <td nowrap=""> Full load（mm/s） </td>
-              <td colSpan="2" nowrap="">
-                
-                500
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> No load（mm/s） </td>
-              <td colSpan="2" nowrap="">
-                
-                700
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Maximum drawbar pull </td>
-              <td nowrap=""> Full load（KN） </td> <td nowrap=""> 11.7 </td>
-              <td nowrap=""> 11.4 </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Maximum gradeability（%）
-              </td>
-              <td nowrap=""> 20 </td> <td nowrap=""> 18 </td>
-            </tr>
-            <tr>
-              
-              <td rowSpan="4"> Dimensions </td>
-              <td nowrap=""> Overall length </td>
-              <td nowrap=""> Without forks（mm） </td> <td nowrap=""> 2485 </td>
-              <td nowrap=""> 2560 </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Overall width（mm）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                1160
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Mast height at maximum lift (with backrest)（mm）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                4030
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Mast lowered height（mm）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                1995
-              </td>
-            </tr>
-            <tr>
-              
-              <td rowSpan="5"> Chassis </td>
-              <td rowSpan="2" nowrap="">
-                
-                Tires
-              </td>
-              <td nowrap=""> Front wheel </td>
-              <td colSpan="2" nowrap="">
-                
-                7.00-12-12PR
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Rear wheel </td>
-              <td colSpan="2" nowrap="">
-                
-                6.00-9-10PR
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Wheelbase（mm）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                1600
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Tread </td>
-              <td nowrap=""> Front wheel/rear wheel（mm） </td>
-              <td colSpan="2" nowrap="">
-                
-                970/970
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Self weight </td>
-              <td nowrap=""> Without load（Kg） </td> <td nowrap=""> 3300 </td>
-              <td nowrap=""> 3660 </td>
-            </tr>
-            <tr>
-              
-              <td rowSpan="10" nowrap="">
-                
-                Drive
-              </td>
-              <td nowrap=""> Battery </td>
-              <td nowrap=""> Voltage/capacity（V/Ah） </td>
-              <td colSpan="2" nowrap="">
-                
-                12/80
-              </td>
-            </tr>
-            <tr>
-              
-              <td rowSpan="6" nowrap="">
-                
-                Engine
-              </td>
-              <td nowrap=""> Model </td> <td colSpan="2"> 4D27G31 Xinchang </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Rated output（kw/r.p.m） </td>
-              <td colSpan="2" nowrap="">
-                
-                36.8/2500
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Rated torque（Nm/r.p.m） </td>
-              <td colSpan="2" nowrap="">
-                
-                156/1700-1900
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Bore x stroke（mm） </td>
-              <td colSpan="2" nowrap="">
-                
-                90×105
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Number of cylinders </td>
-              <td colSpan="2" nowrap="">
-                
-                4
-              </td>
-            </tr>
-            <tr>
-              
-              <td nowrap=""> Displacement（L） </td>
-              <td colSpan="2" nowrap="">
-                
-                2.67
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Fuel tank capacity（L）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                55
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Transmissions (FWD/RWD)
-              </td>
-              <td colSpan="2"> 1/1 manual shift </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Operating pressure（Mpa）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                18.5
-              </td>
-            </tr>
-            <tr>
-              
-              <td rowSpan="6"> Supplement </td>
-              <td colSpan="2" nowrap="">
-                
-                Tire type (FR/RR)
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                Pneumatic
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Number of wheels (FR/RR)（pcs）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                2/2
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Lowering speed (full load)（mm/s）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                450
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Lowering speed (no load)（mm/s）
-              </td>
-              <td colSpan="2" nowrap="">
-                
-                500
-              </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Axle load distribution (full load) (FR/RR)（kg）
-              </td>
-              <td nowrap=""> 4770/530 </td> <td nowrap=""> 5544/616 </td>
-            </tr>
-            <tr>
-              
-              <td colSpan="2" nowrap="">
-                
-                Axle load distribution (no load) (FR/RR)（kg）
-              </td>
-              <td nowrap=""> 1320/1980 </td> <td nowrap=""> 1464/2196 </td>
-            </tr>
-          </tbody>
-        </table>
+   <table class="table ke-zeroborder text-center" cellpadding="1" cellspacing="1">
+        <tr>
+            <td colspan="4"> Model </td>
+            <td> CPD16SA3 </td>
+            <td> CPD18SA3 </td>
+            <td> CPD20SA3 </td>
+        </tr>
+        <tr>
+            <td> Rated load </td>
+            <td colspan="2"></td>
+            <td> kg </td>
+            <td> 1600 </td>
+            <td> 1800 </td>
+            <td> 2000 </td>
+        </tr>
+        <tr>
+            <td> Load center distance </td>
+            <td colspan="2"></td>
+            <td> mm </td>
+            <td> 500 </td>
+            <td> 500 </td>
+            <td> 500 </td>
+        </tr>
+        <tr>
+            <td> Lift height </td>
+            <td colspan="2"></td>
+            <td> mm </td>
+            <td> 3000 </td>
+            <td> 3000 </td>
+            <td> 3000 </td>
+        </tr>
+        <tr>
+            <td> Free lift height </td>
+            <td colspan="2"></td>
+            <td> mm </td>
+            <td> 150 </td>
+            <td> 150 </td>
+            <td> 150 </td>
+        </tr>
+        <tr>
+            <td> Fork size </td>
+            <td></td>
+            <td> L×W×T </td>
+            <td> mm </td>
+            <td colspan="2"> 1070×100×40 </td>
+            <td> 1070×122×40 </td>
+        </tr>
+        <tr>
+            <td> Mast tilt angle </td>
+            <td></td>
+            <td> FR/RR </td>
+            <td> 。 </td>
+            <td> 6.5/6.5 </td>
+            <td> 6.5/6.5 </td>
+            <td> 6.5/6.5 </td>
+        </tr>
+        <tr>
+            <td> Minimum turning radius </td>
+            <td colspan="2"></td>
+            <td> mm </td>
+            <td> 1550 </td>
+            <td> 1550 </td>
+            <td> 1680 </td>
+        </tr>
+        <tr>
+            <td> Minimum right angle stacking aisle width </td>
+            <td colspan="2"></td>
+            <td> mm </td>
+            <td> 3070 </td>
+            <td> 3070 </td>
+            <td> 3220 </td>
+        </tr>
+        <tr>
+            <td> Minimum ground clearance </td>
+            <td colspan="2"></td>
+            <td> mm </td>
+            <td> 102 </td>
+            <td> 102 </td>
+            <td> 100 </td>
+        </tr>
+        <tr>
+            <td> Height of overhead guard </td>
+            <td colspan="2"></td>
+            <td> mm </td>
+            <td> 1960 </td>
+            <td> 1960 </td>
+            <td> 2020 </td>
+        </tr>
+        <tr>
+            <td rowspan="3"> Performance </td>
+            <td> <br />Maximum travel speed </td>
+            <td> Full load </td>
+            <td> km/h </td>
+            <td> 14 </td>
+            <td> 14 </td>
+            <td> 13 </td>
+        </tr>
+        <tr>
+            <td> <br />Maximum lift speed </td>
+            <td> Full load </td>
+            <td> mm/s </td>
+            <td> 260 </td>
+            <td> 260 </td>
+            <td> 200 </td>
+        </tr>
+        <tr>
+            <td colspan="2"> Maximum gradeability </td>
+            <td> % </td>
+            <td> 15 </td>
+            <td> 15 </td>
+            <td> 15 </td>
+        </tr>
+        <tr>
+            <td rowspan="2"> Dimensions </td>
+            <td> Overall length </td>
+            <td> Without forks </td>
+            <td> mm </td>
+            <td> 1930 </td>
+            <td> 1930 </td>
+            <td> 2080 </td>
+        </tr>
+        <tr>
+            <td colspan="2"> Overall width </td>
+            <td> mm </td>
+            <td> 1066 </td>
+            <td> 1066 </td>
+            <td> 1156 </td>
+        </tr>
+        <tr>
+            <td> Self weight </td>
+            <td></td>
+            <td> Without load </td>
+            <td> kg </td>
+            <td> 3200 </td>
+            <td> 3260 </td>
+            <td> 3550 </td>
+        </tr>
+        <tr>
+            <td> Battery </td>
+            <td></td>
+            <td> Voltage/capacity </td>
+            <td> V/Ah </td>
+            <td> 48/500 </td>
+            <td> 48/500 </td>
+            <td> 48/560 </td>
+        </tr>
+        <tr>
+            <td rowspan="2"> Motor </td>
+            <td></td>
+            <td> Traveling </td>
+            <td> kW </td>
+            <td> 4.8×2 </td>
+            <td> 4.8×2 </td>
+            <td> 4.8×2 </td>
+        </tr>
+        <tr>
+            <td> Lifting </td>
+            <td></td>
+            <td> kW </td>
+            <td> 10 </td>
+            <td> 10 </td>
+            <td> 10 </td>
+        </tr>
+        <tr>
+            <td colspan="4"> Way of control </td>
+            <td> AC </td>
+            <td> AC </td>
+            <td> AC </td>
+        </tr>
+        <tr>
+            <td colspan="3"> Operating pressure </td>
+            <td> Mpa </td>
+            <td> 15.5 </td>
+            <td> 15.5 </td>
+            <td> 15.5 </td>
+        </tr>
+        <tr>
+            <td colspan="3"> Maximum drawbar pull </td>
+            <td> kN </td>
+            <td> 18 </td>
+            <td> 18 </td>
+            <td> 14 </td>
+        </tr>
+    </table>
       </>
     );
   };
