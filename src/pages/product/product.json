@@ -1,0 +1,22 @@
+{
+  "D1": { "id": 1, "aboutPic": "/assets/product/D1/1.jpg", "name":""},
+  "D2": { "id": 2, "aboutPic": "/assets/product/D2/1.jpg", "name":"" },
+  "D3": { "id": 3, "aboutPic": "/assets/product/D3/1.jpg", "name":"" },
+  "D4": { "id": 4, "aboutPic": "/assets/product/D4/1.jpg", "name":"" },
+  "D5": { "id": 5, "aboutPic": "/assets/product/D5/1.jpg", "name":"" },
+  "D6": { "id": 6, "aboutPic": "/assets/product/D6/1.jpg", "name":"" },
+  "D7": { "id": 7, "aboutPic": "/assets/product/D7/1.jpg", "name":"" },
+  "D8": { "id": 8, "aboutPic": "/assets/product/D8/1.jpg", "name":"" },
+  "D9": { "id": 9, "aboutPic": "/assets/product/D9/1.jpg", "name":"" },
+  "D10": { "id": 10, "aboutPic": "/assets/product/D10/1.jpg" , "name":""},
+  "E1": { "id": 1, "aboutPic": "/assets/product/E1/1.jpg", "name":"" },
+  "E2": { "id": 2, "aboutPic": "/assets/product/E2/1.jpg", "name":"" },
+  "E3": { "id": 3, "aboutPic": "/assets/product/E3/1.jpg", "name":"" },
+  "E4": { "id": 4, "aboutPic": "/assets/product/E4/1.jpg", "name":"" },
+  "E5": { "id": 5, "aboutPic": "/assets/product/E5/1.jpg", "name":"" },
+  "E6": { "id": 6, "aboutPic": "/assets/product/E6/1.jpg", "name":"" },
+  "E7": { "id": 7, "aboutPic": "/assets/product/E7/1.jpg", "name":"" },
+  "E8": { "id": 8, "aboutPic": "/assets/product/E8/1.jpg", "name":"" },
+  "E9": { "id": 9, "aboutPic": "/assets/product/E9/1.jpg", "name":"" },
+  "E10": { "id": 10, "aboutPic": "/assets/product/E10/1.jpg", "name":"" }
+}

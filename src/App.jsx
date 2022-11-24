@@ -1,5 +1,5 @@
 import { useState, lazy, Suspense, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route ,Outlet} from "react-router-dom";
 
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./component/utils/Theme";
@@ -8,11 +8,23 @@ import "react-toastify/dist/ReactToastify.css";
 import MainMenu from "./component/menu/MainMenu";
 import About from "./pages/about/About";
 import Contact from "./pages/Contact";
-import Product from "./pages/Product";
+import ProductId from "./pages/product/ProductId";
 import SparePart from "./pages/SparePart";
 import PageNotFound from "./pages/404/PageNotFound";
 import cookie from "js-cookie";
-import i18n from "./i18n";
+import Product from "./pages/product/Product";
+import ProductD1 from "./pages/product/ProductD1";
+import ProductD2 from "./pages/product/ProductD2";
+import ProductD3 from "./pages/product/ProductD3";
+import ProductD4 from "./pages/product/ProductD4";
+import ProductD5 from "./pages/product/ProductD5";
+import ProductD6 from "./pages/product/ProductD6";
+import ProductD7 from "./pages/product/ProductD7";
+import ProductD8 from "./pages/product/ProductD8";
+import ProductD9 from "./pages/product/ProductD9";
+import ProductD10 from "./pages/product/ProductD10";
+
+
 
 const Container = styled.div`
   display: flex;
@@ -64,14 +76,30 @@ function App() {
                 <Routes>
                   <Route path="/">
                     <Route index element={<About   />} />
-                    <Route path="/about" element={<About   />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/product" element={<Product />} />
-                    <Route path="/parePart" element={<SparePart />} />
+                    <Route path="about" element={<About   />} />
+                    <Route path="contact" element={<Contact />} />
+                      <Route path="product" element={<Product />} />
+                         
+                              <Route path="product/productd1" element={<ProductD1 />} />
+                              <Route path="product/productd2" element={<ProductD2 />} />
+                              <Route path="product/productd3" element={<ProductD3 />} />
+                              <Route path="product/productd4" element={<ProductD4 />} />
+                              <Route path="product/productd5" element={<ProductD5 />} />
+                              <Route path="product/productd6" element={<ProductD6 />} />
+                              <Route path="product/productd7" element={<ProductD7 />} />
+                              <Route path="product/productd8" element={<ProductD8 />} />
+                              <Route path="product/productd9" element={<ProductD9 />} />
+                              <Route path="product/productd10" element={<ProductD10 />} />
+                        
+                      
+                     
+                    <Route path="product/:id" element={<ProductId />} />
+                    <Route path="parePart" element={<SparePart />} />
                     <Route path="*" element={<PageNotFound />} />
                   </Route>
                 </Routes>
               </Suspense>
+              
             </BodyWrapper>
           </BrowserRouter>
         </Container>

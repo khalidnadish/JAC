@@ -1,0 +1,50 @@
+Model	CPCD10H	CPCD15H	CPCD18H
+Features	Power type	Diesel
+Rated load（kg）	1000	1500	1800
+Load center distance（mm）	500
+Lift height（mm）	3000
+Free lift height（mm）	120
+Fork size	L×W×T（mm）	920×100×35
+Mast tilt angle	Front/Rear	6°/12°
+Minimum turning radius（mm）	1880	1955	1985
+Minimum right angle stacking aisle width（mm）	3290	3365	3395
+Minimum right angle aisle width（mm）	2080	2155	2185
+Minimum ground clearance	Frame center(no load)（mm）	115
+Mast Bottom（no load）（mm）	110
+Height of overhead guard（mm）	2060
+Overhang (FR)（mm）	410
+Performance	
+Maximum travel speed	Full load（km/h）	14.6
+No load（km/h）	14.8
+
+Maximum lift speed	Full load（mm/s）	510
+No load（mm/s）	555
+Maximum drawbar pull	Full load（KN）	12	14	19
+Maximum gradeability（%）	20
+Dimensions	Overall length	Without forks（mm）	2160	2235	2270
+Overall width（mm）	1080
+Mast height at maximum lift (with backrest)（mm）	3930
+Mast lowered height（mm）	2010
+Chassis	Tires	Front wheel	6.50-10-10PR
+Rear wheel	5.00-8-10PR
+Wheelbase（mm）	1400
+Tread	Front wheel/rear wheel（mm）	891/920
+Self weight	Without load（Kg）	2430	2790	2890
+Drive	Battery	Voltage/capacity（V/Ah）	12/80
+Engine	Model	4N23G31
+Xinchang
+Rated output（kw/r.p.m）	30/2600
+Rated torque（Nm/r.p.m）	131/1700-1900
+Bore x stroke（mm）	85×100
+Number of cylinders	4
+Displacement（L）	2.27
+Fuel tank capacity（L）	49
+Transmissions (FWD/RWD)	1/1
+manual shift
+Operating pressure（Mpa）	15.5
+Supplement	Tire type (FR/RR)	Pneumatic
+Number of wheels (FR/RR)（pcs）	2/2
+Lowering speed (full load)（mm/s）	370
+Lowering speed (no load)（mm/s）	640
+Axle load distribution (full load) (FR/RR)（kg）	3087/343	3861/429	4221/469
+Axle load distribution (no load) (FR/RR)（kg）	972/1458	1116/1674	1156/1734

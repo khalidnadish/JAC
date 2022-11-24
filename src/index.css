@@ -49,6 +49,13 @@ p{
   line-height: 1.4;
 
 }
+tr{
+  border:1px  solid white;
+}
+td{
+  border:1px  solid #ccc;
+}
+
 @media screen and (max-width: 500px) {
   body{
     background-color: rgb(247, 184, 184);
