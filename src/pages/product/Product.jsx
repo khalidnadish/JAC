@@ -9,6 +9,7 @@ import cpm from "./productCpm";
 import { useTranslation } from "react-i18next";
 import prod from "../product/product.json";
 import diselProduct from "./Dproduct.json";
+import electricProduct from "./Eproduct.json";
 export default function Prodct() {
   const { t } = useTranslation();
 
@@ -22,7 +23,6 @@ export default function Prodct() {
             diselProduct.map((el,idx)=>{
               const Dimage=`/assets/product/${el}/1.jpg`
               const Dtitle=`${el}.subtitle`
-              // "/assets/product/D1/1.jpg"
               return (
               <React.Fragment key={el.id}>
                 <MyCard
@@ -36,10 +36,10 @@ export default function Prodct() {
  {/* --------------Loop For Electric Product ---------------------- */}    
  <cpm.SectionTitle>{t("electric")}</cpm.SectionTitle>
           {
-            diselProduct.map((el,idx)=>{
+            electricProduct.map((el,idx)=>{
               const Dimage=`/assets/product/${el}/1.jpg`
               const Dtitle=`${el}.subtitle`
-              // "/assets/product/D1/1.jpg"
+      
               return (
               <React.Fragment key={el.id}>
                 <MyCard
@@ -63,7 +63,7 @@ export default function Prodct() {
        
   {/* ------------------------------------------------------------------- */}
         
-        <MyCard
+        {/* <MyCard
           image={prod.E1.aboutPic}
           title={t("E1.title")}
           subtitle={t("E1.subtitle")}
@@ -132,7 +132,7 @@ export default function Prodct() {
           subtitle={t("E10.subtitle")}
           description={t("electric")}
           hrefLink={"producte10" }
-        />
+        /> */}
 
         {/* <MyCard  image={"/assets/product/H-153243-1-5.jpg"}/> */}
       </cpm.CardWrapper>
