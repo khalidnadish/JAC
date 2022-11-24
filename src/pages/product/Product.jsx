@@ -94,61 +94,70 @@ export default function Prodct() {
           title={t("E1.title")}
           subtitle={t("E1.subtitle")}
           description={t("electric")}
-          hrefLink={"productd10" }
+          hrefLink={"producte1" }
         />
         <MyCard
           image={prod.E2.aboutPic}
           title={t("E2.title")}
           subtitle={t("E2.subtitle")}
           description={t("electric")}
+          hrefLink={"producte2" }
         />
         <MyCard
           image={prod.E3.aboutPic}
           title={t("E3.title")}
           subtitle={t("E3.subtitle")}
           description={t("electric")}
+          hrefLink={"producte3" }
         />
         <MyCard
          image={prod.E4.aboutPic}
           title={t("E4.title")}
           subtitle={t("E4.subtitle")}
           description={t("electric")}
+          hrefLink={"producte4" }
         />
         <MyCard
           image={prod.E5.aboutPic}
           title={t("E5.title")}
           subtitle={t("E5.subtitle")}
           description={t("electric")}
+          hrefLink={"producte5" }
         />
         <MyCard
          image={prod.E6.aboutPic}
           title={t("E6.title")}
           subtitle={t("E6.subtitle")}
           description={t("electric")}
+          hrefLink={"producte6" }
         />
         <MyCard
          image={prod.E7.aboutPic}
           title={t("E7.title")}
           subtitle={t("E7.subtitle")}
           description={t("electric")}
+          hrefLink={"producte7" }
         />
         <MyCard
           image={prod.E8.aboutPic}
           title={t("E8.title")}
           subtitle={t("E8.subtitle")}
           description={t("electric")}
+          hrefLink={"producte8" }
         />
         <MyCard
            image={prod.E9.aboutPic}
           title={t("E9.title")}
           subtitle={t("E9.subtitle")}
           description={t("electric")}
+          hrefLink={"producte9" }
         />
         <MyCard
          image={prod.E10.aboutPic}
           title={t("E10.title")}
           subtitle={t("E10.subtitle")}
           description={t("electric")}
+          hrefLink={"producte10" }
         />
 
         {/* <MyCard  image={"/assets/product/H-153243-1-5.jpg"}/> */}

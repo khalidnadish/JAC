@@ -25,6 +25,18 @@ import ProductD9 from "./pages/product/dezel/ProductD9";
 import ProductD10 from "./pages/product/dezel/ProductD10";
 
 
+import ProductE1 from "./pages/product/elec/ProductE1";
+import ProductE2 from "./pages/product/elec/ProductE2";
+import ProductE3 from "./pages/product/elec/ProductE3";
+import ProductE4 from "./pages/product/elec/ProductE4";
+import ProductE5 from "./pages/product/elec/ProductE5";
+import ProductE6 from "./pages/product/elec/ProductE6";
+import ProductE7 from "./pages/product/elec/ProductE7";
+import ProductE8 from "./pages/product/elec/ProductE8";
+import ProductE9 from "./pages/product/elec/ProductE9";
+import ProductE10 from "./pages/product/elec/ProductE10";
+
+
 
 const Container = styled.div`
   display: flex;
@@ -90,6 +102,18 @@ function App() {
                               <Route path="product/productd8" element={<ProductD8 />} />
                               <Route path="product/productd9" element={<ProductD9 />} />
                               <Route path="product/productd10" element={<ProductD10 />} />
+
+
+                              <Route path="product/producte1" element={<ProductE1 />} />
+                              <Route path="product/producte2" element={<ProductE2 />} />
+                              <Route path="product/producte3" element={<ProductE3 />} />
+                              <Route path="product/producte4" element={<ProductE4 />} />
+                              <Route path="product/producte5" element={<ProductE5 />} />
+                              <Route path="product/producte6" element={<ProductE6 />} />
+                              <Route path="product/producte7" element={<ProductE7 />} />
+                              <Route path="product/producte8" element={<ProductE8 />} />
+                              <Route path="product/producte9" element={<ProductE9 />} />
+                              <Route path="product/producte10" element={<ProductE10 />} />
                         
                       
                      
