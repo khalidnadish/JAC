@@ -78,6 +78,7 @@ width: 100%;
 
 const TableWraper= styled.div`
  
+ 
 font-size: 1rem;
 @media (max-width: 500px) {
   font-size: .6rem;

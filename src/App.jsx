@@ -117,7 +117,7 @@ function App() {
                         
                       
                      
-                    <Route path="product/:id" element={<ProductId />} />
+                    <Route path="product/:id/:filesNO" element={<ProductId />} />
                     <Route path="parePart" element={<SparePart />} />
                     <Route path="*" element={<PageNotFound />} />
                   </Route>

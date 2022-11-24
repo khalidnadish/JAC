@@ -29,9 +29,7 @@ function ProductId() {
       <cpm.SliderWraper>
         <cpm.CpmSlider {...settings}>
           <cpm.SliderImage src={"/assets/product/D10/1.jpg"} />
-          <cpm.SliderImage src={"/assets/product/D10/2.jpg"} />
-          <cpm.SliderImage src={"/assets/product/D10/3.jpg"} />
-          <cpm.SliderImage src={"/assets/product/D10/4.jpg"} />
+       
         </cpm.CpmSlider>
     {/* ---------------------------- */}
       </cpm.SliderWraper>

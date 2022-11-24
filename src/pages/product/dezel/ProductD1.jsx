@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import cpm from "../productCpm"
 
+import prod from "../product.json";
 import { useTranslation } from "react-i18next";
 
 function ProductId() {
@@ -25,7 +26,7 @@ function ProductId() {
   return (
     <>
     <cpm.ProdctPageWraper>
-      <h1>D1</h1>
+      <h2> {prod.D1.name}</h2>
       <cpm.SliderWraper>
         <cpm.CpmSlider {...settings}>
           <cpm.SliderImage src={"/assets/product/D1/1.jpg"} />

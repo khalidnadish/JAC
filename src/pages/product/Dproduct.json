@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "Image": "/assets/product/D1/1.jpg",
+    "name": "(1-1.8T Forklift Truck, H Series)",
+    "directory": "D1",
+    "imageCount": "6"
+  },
+   {
+    "id": 2,
+    "Image": "/assets/product/D2/1.jpg",
+    "name": "(2-2.5T Forklift Truck, H Series)",
+    "directory": "D2",
+    "imageCount": "7"
+  },
+   {
+    "id": 3,
+    "Image": "/assets/product/D3/1.jpg",
+    "name": "(2-2.5T Forklift Truck, J Series)",
+    "directory": "D3",
+    "imageCount": "3"
+  },
+   {
+    "id": 4,
+    "Image": "/assets/product/D4/1.jpg",
+    "name": "(3-3.5T Forklift Truck, H Series)",
+    "directory": "D4",
+    "imageCount": "7"
+  },
+   {
+    "id": 5,
+    "Image": "/assets/product/D5/1.jpg",
+    "name": "(3-3.5T Forklift Truck, J Series)",
+    "directory": "D5",
+    "imageCount": "3"
+  },
+   {
+    "id": 6,
+    "Image": "/assets/product/D6/1.jpg",
+    "name": "(4-4.5T Forklift Truck, H Series)",
+    "directory": "D6",
+    "imageCount": "7"
+  },
+   {
+    "id": 7,
+    "Image": "/assets/product/D7/1.jpg",
+    "name": "(5-7T Forklift Truck, H Series)",
+    "directory": "D7",
+    "imageCount": "4"
+  },
+   {
+    "id": 8,
+    "Image": "/assets/product/D8/1.jpg",
+    "name": "(5-12T Internal Combustion Counterweight Forklift Truck, J Series)",
+    "directory": "D8",
+    "imageCount": "4"
+  },
+   {
+    "id": 9,
+    "Image": "/assets/product/D9/1.jpg",
+    "name": "(8-10T Forklift Truck, H Series)",
+    "directory": "D9",
+    "imageCount": "4"
+  },
+   {
+    "id": 10,
+    "Image": "/assets/product/D10/1.jpg",
+    "name": "(16T Forklift Truck)",
+    "directory": "D10",
+    "imageCount": "1"
+  }
+]
+
+
+

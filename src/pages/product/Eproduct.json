@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "Image": "/assets/product/E1/1.jpg",
+    "name": "(1-1.8T Four Wheel Forklift, H Series)",
+    "directory": "E1",
+    "imageCount": "4"
+  },
+   {
+    "id": 2,
+    "Image": "/assets/product/E2/1.jpg",
+    "name": "(1-1.8T Four Wheel Forklift, J Series)",
+    "directory": "E2",
+    "imageCount": "3"
+  },
+   {
+    "id": 3,
+    "Image": "/assets/product/E3/1.jpg",
+    "name":"(1-1.8T Four Wheel Forklift, S Series)",
+    "directory": "E3",
+    "imageCount": "1"
+  },
+   {
+    "id": 4,
+    "Image": "/assets/product/E4/1.jpg",
+    "name": "(1.6-2T 3-Wheel Counterbalance Battery Forklift)",
+    "directory": "E4",
+    "imageCount": "1"
+  },
+   {
+    "id": 5,
+    "Image": "/assets/product/E5/1.jpg",
+    "name": "(2-2.5T Four Wheel Forklift, J Series)",
+    "directory": "E5",
+    "imageCount": "5"
+  },
+   {
+    "id": 6,
+    "Image": "/assets/product/E6/1.jpg",
+    "name":"(2-2.5T Four Wheel Forklift,S Series)",
+    "directory": "E6",
+    "imageCount": "4"
+  },
+   {
+    "id": 7,
+    "Image": "/assets/product/E7/1.jpg",
+    "name": "(2-3T Four Wheel Forklift, JE Series)",
+    "directory": "E7",
+    "imageCount": "1"
+  },
+   {
+    "id": 8,
+    "Image": "/assets/product/E8/1.jpg",
+    "name":"(3-3.5T Four Wheel Forklift, J Series)",
+    "directory": "E8",
+    "imageCount": "4"
+  },
+   {
+    "id": 9,
+    "Image": "/assets/product/E9/1.jpg",
+    "name": "(3-5T Four Wheel Forklift, HE Series)",
+    "directory": "E9",
+    "imageCount": "2"
+  },
+   {
+    "id": 10,
+    "Image": "/assets/product/E10/1.jpg",
+    "name": "(4-6T Four Wheel Forklift, S Series)",
+    "directory": "E10",
+    "imageCount": "4"
+  }
+]
+
+
+

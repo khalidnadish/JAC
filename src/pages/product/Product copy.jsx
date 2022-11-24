@@ -8,48 +8,35 @@ import { Button, CardActionArea, CardActions, Chip } from "@mui/material";
 import cpm from "./productCpm";
 import { useTranslation } from "react-i18next";
 import prod from "../product/product.json";
-import diselProduct from "./Dproduct.json";
 export default function Prodct() {
   const { t } = useTranslation();
-
+  const Dezel=["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "D10"]
+  // const Dezel1=[{prod.D1.aboutPic}, "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "D10"]
 
   return (
     <>
       <cpm.CardWrapper>
-{/* --------------Loop For Desel Product ---------------------- */}
+        {/* <TableVeiw/> */}
         <cpm.SectionTitle>{t("dezel")}</cpm.SectionTitle>
           {
-            diselProduct.map((el,idx)=>{
+            Dezel.map((el,idx)=>{
               const Dimage=`/assets/product/${el}/1.jpg`
               const Dtitle=`${el}.subtitle`
               // "/assets/product/D1/1.jpg"
               return (
-              <React.Fragment key={el.id}>
+              <>
                 <MyCard
-                  image={ el.Image }
-                  subtitle={ el.name}
-                  hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}`}
+                  key={idx}
+                  image={ Dimage}
+                  // title={t(Dtitle)}
+                  subtitle={t(Dtitle)}
+                  description={t("dezel")}
+                  hrefLink={`/product/d1/6?model=${prod.D1.name}`}
                 />
-              </React.Fragment>
+              </>
             );})
           }      
- {/* --------------Loop For Electric Product ---------------------- */}    
- <cpm.SectionTitle>{t("electric")}</cpm.SectionTitle>
-          {
-            diselProduct.map((el,idx)=>{
-              const Dimage=`/assets/product/${el}/1.jpg`
-              const Dtitle=`${el}.subtitle`
-              // "/assets/product/D1/1.jpg"
-              return (
-              <React.Fragment key={el.id}>
-                <MyCard
-                  image={ el.Image }
-                  subtitle={ el.name}
-                  hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}`}
-                />
-              </React.Fragment>
-            );})
-          }      
+     
 
 
 
@@ -60,9 +47,72 @@ export default function Prodct() {
           description={t("dezel")}
           hrefLink={`/product/d1/6?model=${prod.D1.name}`}
         />
-       
+        <MyCard
+         image={prod.D2.aboutPic}
+          title={t("D2.title")}
+          subtitle={t("D2.subtitle")}
+          description={t("dezel")}
+          hrefLink={`/product/d2/7?model=${prod.D2.name}` }
+        />
+        <MyCard
+         image={prod.D3.aboutPic}
+          title={t("D3.title")}
+          subtitle={t("D3.subtitle")}
+          description={t("dezel")}
+          hrefLink={`/product/d3/3?model=${prod.D3.name}` }
+        />
+        <MyCard
+         image={prod.D4.aboutPic}
+          title={t("D4.title")}
+          subtitle={t("D4.subtitle")}
+          description={t("dezel")}
+          hrefLink={`/product/d4/7?model=${prod.D4.name}`}
+        />
+        <MyCard
+          image={prod.D5.aboutPic}
+          title={t("D5.title")}
+          subtitle={t("D5.subtitle")}
+          description={t("dezel")}
+          hrefLink={`/product/d5/3?model=${prod.D5.name}` }
+        />
+        <MyCard
+          image={prod.D6.aboutPic}
+          title={t("D6.title")}
+          subtitle={t("D6.subtitle")}
+          description={t("dezel")}
+          hrefLink={`/product/d6/7?model=${prod.D6.name}` }
+        />
+        <MyCard
+         image={prod.D7.aboutPic}
+          title={t("D7.title")}
+          subtitle={t("D7.subtitle")}
+          description={t("dezel")}
+          hrefLink={`/product/d7/4?model=${prod.D7.name}` }
+        />
+        <MyCard
+         image={prod.D8.aboutPic}
+          title={t("D8.title")}
+          subtitle={t("D8.subtitle")}
+          description={t("dezel")}
+          hrefLink={`/product/d8/4?model=${prod.D8.name}` }
+        />
+        <MyCard
+          image={prod.D9.aboutPic}
+          title={t("D9.title")}
+          subtitle={t("D.subtitle")}
+          description={t("dezel")}
+          hrefLink={`/product/d9/4?model=${prod.D9.name}` }
+        />
+        <MyCard
+          image={prod.D10.aboutPic}
+          title={t("D10.title")}
+          subtitle={t("D.subtitle")}
+          description={t("dezel")}
+          hrefLink={`/product/d10/1?model=${prod.D10.name}` }
+         />
+         */}
   {/* ------------------------------------------------------------------- */}
-        
+        <cpm.SectionTitle>{t("electric")}</cpm.SectionTitle>
         <MyCard
           image={prod.E1.aboutPic}
           title={t("E1.title")}

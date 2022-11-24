@@ -2,7 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import cpm from "../productCpm"
-
+import prod from "../product.json";
 import { useTranslation } from "react-i18next";
 
 function ProductId() {
