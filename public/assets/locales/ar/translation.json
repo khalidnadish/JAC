@@ -3,5 +3,8 @@
   "morebtn":"تفاصبل اكثر",
   "modelname":"{{modelname}}",
   "m84": { "title": "رافعة ديزل", "subtitle": "(3-3.5T Forklift Truck, H Series)", 
-  "description": "The air intake system of the diesel forklift is installed at high level to prevent the dust   from entering the engine, so the lifespan of the engine is extended, accordingly." }
+  "description": "The air intake system of the diesel forklift is installed at high level to prevent the dust   from entering the engine, so the lifespan of the engine is extended, accordingly." },
+  
+"dezel": "رافعات ديزل",
+"electric": "رافعات كهربائية"
 }
