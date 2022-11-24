@@ -13,28 +13,28 @@ import SparePart from "./pages/SparePart";
 import PageNotFound from "./pages/404/PageNotFound";
 import cookie from "js-cookie";
 import Product from "./pages/product/Product";
-import ProductD1 from "./pages/product/dezel/ProductD1";
-import ProductD2 from "./pages/product/dezel/ProductD2";
-import ProductD3 from "./pages/product/dezel/ProductD3";
-import ProductD4 from "./pages/product/dezel/ProductD4";
-import ProductD5 from "./pages/product/dezel/ProductD5";
-import ProductD6 from "./pages/product/dezel/ProductD6";
-import ProductD7 from "./pages/product/dezel/ProductD7";
-import ProductD8 from "./pages/product/dezel/ProductD8";
-import ProductD9 from "./pages/product/dezel/ProductD9";
-import ProductD10 from "./pages/product/dezel/ProductD10";
+// import ProductD1 from "./pages/product/dezel/ProductD1";
+// import ProductD2 from "./pages/product/dezel/ProductD2";
+// import ProductD3 from "./pages/product/dezel/ProductD3";
+// import ProductD4 from "./pages/product/dezel/ProductD4";
+// import ProductD5 from "./pages/product/dezel/ProductD5";
+// import ProductD6 from "./pages/product/dezel/ProductD6";
+// import ProductD7 from "./pages/product/dezel/ProductD7";
+// import ProductD8 from "./pages/product/dezel/ProductD8";
+// import ProductD9 from "./pages/product/dezel/ProductD9";
+// import ProductD10 from "./pages/product/dezel/ProductD10";
 
 
-import ProductE1 from "./pages/product/elec/ProductE1";
-import ProductE2 from "./pages/product/elec/ProductE2";
-import ProductE3 from "./pages/product/elec/ProductE3";
-import ProductE4 from "./pages/product/elec/ProductE4";
-import ProductE5 from "./pages/product/elec/ProductE5";
-import ProductE6 from "./pages/product/elec/ProductE6";
-import ProductE7 from "./pages/product/elec/ProductE7";
-import ProductE8 from "./pages/product/elec/ProductE8";
-import ProductE9 from "./pages/product/elec/ProductE9";
-import ProductE10 from "./pages/product/elec/ProductE10";
+// import ProductE1 from "./pages/product/elec/ProductE1";
+// import ProductE2 from "./pages/product/elec/ProductE2";
+// import ProductE3 from "./pages/product/elec/ProductE3";
+// import ProductE4 from "./pages/product/elec/ProductE4";
+// import ProductE5 from "./pages/product/elec/ProductE5";
+// import ProductE6 from "./pages/product/elec/ProductE6";
+// import ProductE7 from "./pages/product/elec/ProductE7";
+// import ProductE8 from "./pages/product/elec/ProductE8";
+// import ProductE9 from "./pages/product/elec/ProductE9";
+// import ProductE10 from "./pages/product/elec/ProductE10";
 
 
 
@@ -92,7 +92,7 @@ function App() {
                     <Route path="contact" element={<Contact />} />
                       <Route path="product" element={<Product />} />
                          
-                              <Route path="product/productd1" element={<ProductD1 />} />
+                              {/* <Route path="product/productd1" element={<ProductD1 />} />
                               <Route path="product/productd2" element={<ProductD2 />} />
                               <Route path="product/productd3" element={<ProductD3 />} />
                               <Route path="product/productd4" element={<ProductD4 />} />
@@ -114,7 +114,7 @@ function App() {
                               <Route path="product/producte8" element={<ProductE8 />} />
                               <Route path="product/producte9" element={<ProductE9 />} />
                               <Route path="product/producte10" element={<ProductE10 />} />
-                        
+                         */}
                       
                      
                     <Route path="product/:id/:filesNO" element={<ProductId />} />
