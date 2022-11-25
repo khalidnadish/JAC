@@ -52,36 +52,36 @@ const TableVeiw = () => {
       <>
         <table  class="table ke-zeroborder" cellpadding="1" cellspacing="1">
                   <tr >
-                    <td colspan="3" > Model </td>
+                    <td colSpan="3" > Model </td>
 					  <td></td>
                     <td  > CPD20Je </td>
                     <td> CPD30Je </td>
                   </tr>
                   <tr >
-                    <td rowspan="14" > Features </td>
-                    <td colspan="2" > Power type </td>
-                    <td colspan="3" > Battery </td>
+                    <td rowSpan="14" > Features </td>
+                    <td colSpan="2" > Power type </td>
+                    <td colSpan="3" > Battery </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Rated load </td>
+                    <td colSpan="2" > Rated load </td>
 					  <td>kg</td>
                     <td> 2000 </td>
                     <td > 2500 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Load center distance </td>
+                    <td colSpan="2" > Load center distance </td>
 					  <td>mm</td>
                     <td> 500 </td>
 					  <td> 500 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Lift height </td>
+                    <td colSpan="2" > Lift height </td>
 					  <td>mm</td>
                     <td> 3000 </td>
 					  <td> 3000 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Free lift height</td>
+                    <td colSpan="2" > Free lift height</td>
 					  <td>mm</td>
                     <td > 120 </td>
 					  <td > 160 </td>
@@ -101,50 +101,50 @@ const TableVeiw = () => {
 					  <td > 8/10 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Minimum turning radius </td>
+                    <td colSpan="2" > Minimum turning radius </td>
 					  <td>mm</td>
                     <td> 2135</td>
 					  <td>2497</td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Minimum right angle stacking aisle width </td>
+                    <td colSpan="2" > Minimum right angle stacking aisle width </td>
 					  <td>mm</td>
                     <td> 3542 </td>
 					  <td> 4181</td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Minimum right angle aisle width </td>
+                    <td colSpan="2" > Minimum right angle aisle width </td>
                     <td>mm</td>
                     <td> 2335 </td>
 					  <td> 2609</td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Minimum ground clearance </td>
+                    <td colSpan="2" > Minimum ground clearance </td>
                     <td>mm</td>
                     <td> 93 </td>
 					  <td> 120</td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Height of overhead guard </td>
+                    <td colSpan="2" > Height of overhead guard </td>
                     <td>mm</td>
                     <td> 2132 </td>
 					  <td> 2180</td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Height form seat to overhead guard </td>
+                    <td colSpan="2" > Height form seat to overhead guard </td>
                     <td>mm</td>
                     <td> 1020 </td>
 					  <td> 980</td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Overhang (FR) </td>
+                    <td colSpan="2" > Overhang (FR) </td>
                     <td>mm</td>
                     <td> 407</td>
 					  <td> 475</td>
                   </tr>
                   <tr >
-                    <td rowspan="7" > Performance </td>
-                    <td rowspan="2" ><br />
+                    <td rowSpan="7" > Performance </td>
+                    <td rowSpan="2" ><br />
                       Maximum travel speed </td>
                     <td > Full load </td>
 					   <td>km/h</td>
@@ -158,7 +158,7 @@ const TableVeiw = () => {
 					  <td> 12 </td>
                   </tr>
                   <tr >
-                    <td rowspan="2" ><br />
+                    <td rowSpan="2" ><br />
                       Maximum lift speed </td>
                     <td > Full load </td>
 					  <td>mm/s</td>
@@ -172,7 +172,7 @@ const TableVeiw = () => {
 					  <td > 380 </td>
                   </tr>
                   <tr >
-                    <td rowspan="2" ><br />
+                    <td rowSpan="2" ><br />
                       Maximum lowering speed </td>
                     <td > Full load </td>
                     <td>mm/s</td>
@@ -186,12 +186,12 @@ const TableVeiw = () => {
 					  <td > 460 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Maximum gradeability </td>
+                    <td colSpan="2" > Maximum gradeability </td>
 					  <td > % </td>
-                    <td colspan="2" > 15 </td>
+                    <td colSpan="2" > 15 </td>
                   </tr>
                   <tr >
-                    <td rowspan="4" > Dimensions </td>
+                    <td rowSpan="4" > Dimensions </td>
                     <td > Overall length </td>
                     <td > Without forks </td>
 					  <td>mm</td>
@@ -199,38 +199,38 @@ const TableVeiw = () => {
 					  <td> 2609 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Overall width </td>
+                    <td colSpan="2" > Overall width </td>
                     <td>mm</td>
                     <td>1072</td>
 					  <td> 1250 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" >
+                    <td colSpan="2" >
                       Mast height at maximum lift (with backrest) </td>
                     <td>mm</td>
                     <td>3930</td>
 					  <td> 4260 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Mast lowered height</td>
+                    <td colSpan="2" > Mast lowered height</td>
                     <td>mm</td>
                     <td>1990</td>
 					  <td> 2065 </td>
                   </tr>
                   <tr >
-                    <td rowspan="11" > Power </td>
-                    <td rowspan="2" > Tires </td>
+                    <td rowSpan="11" > Power </td>
+                    <td rowSpan="2" > Tires </td>
                     <td > Front wheel </td>
 					  <td></td>
-                    <td  colspan="2"> 23×9-10-18PR </td>
+                    <td  colSpan="2"> 23×9-10-18PR </td>
                   </tr>
                   <tr >
                     <td > Rear wheel </td>
 					  <td></td>
-                    <td colspan="2" > 18×7-8-14PR </td>
+                    <td colSpan="2" > 18×7-8-14PR </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Wheelbase </td>
+                    <td colSpan="2" > Wheelbase </td>
                     <td>mm</td>
                     <td>1470</td>
 					  <td> 1700 </td>
@@ -257,7 +257,7 @@ const TableVeiw = () => {
                     <td > 48/630 </td>
                   </tr>
                   <tr >
-                    <td rowspan="2" > Motor </td>
+                    <td rowSpan="2" > Motor </td>
                     <td > Traveling </td>
 					  <td>KW</td>
                     <td > 8 </td>
@@ -270,25 +270,25 @@ const TableVeiw = () => {
                     <td > 15 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Way of control </td>
+                    <td colSpan="2" > Way of control </td>
 					  <td></td>
                     <td > BC/AC </td>
                     <td > AC/BC </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Operating pressure </td>
+                    <td colSpan="2" > Operating pressure </td>
                     <td > Mpa </td>
                     <td > 15.5 </td>
                     <td > 18.5 </td>
                   </tr>
                   <tr >
-                    <td colspan="2" > Maximum drawbar pull </td>
+                    <td colSpan="2" > Maximum drawbar pull </td>
 					  <td>KN</td>
                     <td> 13 </td>
 					  <td> 21 </td>
                   </tr>
 					<tr>
-						<td colspan="6">
+						<td colSpan="6">
 					*The parameters are subject to change without notice.</td>
 						</tr>
                 </table>

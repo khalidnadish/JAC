@@ -16,7 +16,7 @@ const TableVeiw = () => {
       <>
       <table cellpadding="1" cellspacing="1">
         <tr class="">
-            <td colspan="3" nowrap="nowrap">Model </td>
+            <td colSpan="3" nowrap="nowrap">Model </td>
             <td nowrap="nowrap"> CPCD50J </td>
             <td nowrap="nowrap"> CPCD60J </td>
             <td nowrap="nowrap"> CPCD70J </td>
@@ -25,7 +25,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> CPCD120J </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Power type </td>
+            <td colSpan="2" nowrap="nowrap"> Power type </td>
             <td nowrap="nowrap"> </td>
             <td nowrap="nowrap"> Diesel </td>
             <td nowrap="nowrap"> Diesel </td>
@@ -35,7 +35,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> Diesel </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Rated load </td>
+            <td colSpan="2" nowrap="nowrap"> Rated load </td>
             <td nowrap="nowrap"> kg </td>
             <td nowrap="nowrap"> 5000 </td>
             <td nowrap="nowrap"> 6000 </td>
@@ -45,7 +45,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 12000 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Load center distance </td>
+            <td colSpan="2" nowrap="nowrap"> Load center distance </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 600 </td>
             <td nowrap="nowrap"> 600 </td>
@@ -55,7 +55,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 600 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Lift height </td>
+            <td colSpan="2" nowrap="nowrap"> Lift height </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 3000 </td>
             <td nowrap="nowrap"> 3000 </td>
@@ -65,7 +65,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 3000 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Free lift height </td>
+            <td colSpan="2" nowrap="nowrap"> Free lift height </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 172 </td>
             <td nowrap="nowrap"> 172 </td>
@@ -97,7 +97,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 8/10 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Minimum turning radius </td>
+            <td colSpan="2" nowrap="nowrap"> Minimum turning radius </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 3580 </td>
             <td nowrap="nowrap"> 3580 </td>
@@ -107,7 +107,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 4350 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Minimum right angle stacking aisle width </td>
+            <td colSpan="2" nowrap="nowrap"> Minimum right angle stacking aisle width </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 5490 </td>
             <td nowrap="nowrap"> 5490 </td>
@@ -117,7 +117,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 8250 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Minimum right angle aisle width </td>
+            <td colSpan="2" nowrap="nowrap"> Minimum right angle aisle width </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 3670 </td>
             <td nowrap="nowrap"> 3670 </td>
@@ -127,7 +127,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 3877 </td>
         </tr>
         <tr>
-            <td rowspan="2"> <br />Minimum ground clearance </td>
+            <td rowSpan="2"> <br />Minimum ground clearance </td>
             <td nowrap="nowrap"> Frame center (no load) </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 250 </td>
@@ -148,7 +148,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 260 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Height of overhead guard </td>
+            <td colSpan="2" nowrap="nowrap"> Height of overhead guard </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 2500 </td>
             <td nowrap="nowrap"> 2500 </td>
@@ -158,7 +158,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 2650 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Front overhang </td>
+            <td colSpan="2" nowrap="nowrap"> Front overhang </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 610 </td>
             <td nowrap="nowrap"> 610 </td>
@@ -168,7 +168,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 756 </td>
         </tr>
         <tr>
-            <td rowspan="2"> Maximum travel speed </td>
+            <td rowSpan="2"> Maximum travel speed </td>
             <td nowrap="nowrap"> Full load </td>
             <td nowrap="nowrap"> km/h </td>
             <td nowrap="nowrap"> 22 </td>
@@ -189,7 +189,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 28 </td>
         </tr>
         <tr>
-            <td rowspan="2"> Maximum lift speed </td>
+            <td rowSpan="2"> Maximum lift speed </td>
             <td nowrap="nowrap"> Full load </td>
             <td nowrap="nowrap"> mm/s </td>
             <td nowrap="nowrap"> 460 </td>
@@ -221,7 +221,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 112 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Maximum gradeability </td>
+            <td colSpan="2" nowrap="nowrap"> Maximum gradeability </td>
             <td nowrap="nowrap"> % </td>
             <td nowrap="nowrap"> 30 </td>
             <td nowrap="nowrap"> 28 </td>
@@ -242,7 +242,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 4528 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Overall width </td>
+            <td colSpan="2" nowrap="nowrap"> Overall width </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 2045 </td>
             <td nowrap="nowrap"> 2045 </td>
@@ -252,7 +252,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 2350 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Mast height at maximum lift (with backrest) </td>
+            <td colSpan="2" nowrap="nowrap"> Mast height at maximum lift (with backrest) </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 4415 </td>
             <td nowrap="nowrap"> 4415 </td>
@@ -262,7 +262,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 4655 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Mast lowered height </td>
+            <td colSpan="2" nowrap="nowrap"> Mast lowered height </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 2510 </td>
             <td nowrap="nowrap"> 2510 </td>
@@ -272,7 +272,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 3230 </td>
         </tr>
         <tr>
-            <td rowspan="2" nowrap="nowrap"> Tires </td>
+            <td rowSpan="2" nowrap="nowrap"> Tires </td>
             <td nowrap="nowrap"> Front wheel </td>
             <td nowrap="nowrap"> </td>
             <td nowrap="nowrap"> 8.25-15-14PR </td>
@@ -293,7 +293,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 10.00-20-18PR </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Wheelbase </td>
+            <td colSpan="2" nowrap="nowrap"> Wheelbase </td>
             <td nowrap="nowrap"> mm </td>
             <td nowrap="nowrap"> 2300 </td>
             <td nowrap="nowrap"> 2300 </td>
@@ -328,10 +328,10 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> Battery </td>
             <td nowrap="nowrap"> Voltage/capacity </td>
             <td nowrap="nowrap"> V/Ah </td>
-            <td colspan="6"> 24/160<br />24 </td>
+            <td colSpan="6"> 24/160<br />24 </td>
         </tr>
         <tr>
-            <td rowspan="6" nowrap="nowrap"> Engine </td>
+            <td rowSpan="6" nowrap="nowrap"> Engine </td>
             <td nowrap="nowrap"> Model </td>
             <td nowrap="nowrap"> </td>
             <td nowrap="nowrap"> YC4A125-T300 </td>
@@ -392,7 +392,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 7.12/6.87 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Fuel tank capacity </td>
+            <td colSpan="2" nowrap="nowrap"> Fuel tank capacity </td>
             <td nowrap="nowrap"> L </td>
             <td nowrap="nowrap"> 200 </td>
             <td nowrap="nowrap"> 200 </td>
@@ -402,7 +402,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 215 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Transmissions (FWD/RWD) </td>
+            <td colSpan="2" nowrap="nowrap"> Transmissions (FWD/RWD) </td>
             <td nowrap="nowrap"> </td>
             <td nowrap="nowrap"> 2/2 electro-hydraulic steering </td>
             <td nowrap="nowrap"> 2/2 electro-hydraulic steering </td>
@@ -412,13 +412,13 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 2/2 electro-hydraulic steering </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Operating pressure </td>
+            <td colSpan="2" nowrap="nowrap"> Operating pressure </td>
             <td nowrap="nowrap"> Mpa </td>
-            <td colspan="5" nowrap="nowrap"> 19.5 </td>
+            <td colSpan="5" nowrap="nowrap"> 19.5 </td>
             <td nowrap="nowrap"> </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Tire type (FR/RR) </td>
+            <td colSpan="2" nowrap="nowrap"> Tire type (FR/RR) </td>
             <td nowrap="nowrap"> </td>
             <td nowrap="nowrap"> Pneumatic tire </td>
             <td nowrap="nowrap"> Pneumatic tire </td>
@@ -428,12 +428,12 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> Pneumatic tire </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Number of wheels (FR/RR) </td>
+            <td colSpan="2" nowrap="nowrap"> Number of wheels (FR/RR) </td>
             <td nowrap="nowrap"> </td>
-            <td colspan="6" nowrap="nowrap"> 4/2 </td>
+            <td colSpan="6" nowrap="nowrap"> 4/2 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Lowering speed (full load) </td>
+            <td colSpan="2" nowrap="nowrap"> Lowering speed (full load) </td>
             <td nowrap="nowrap"> mm/s </td>
             <td nowrap="nowrap"> 460 </td>
             <td nowrap="nowrap"> 460 </td>
@@ -443,7 +443,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 383 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Lowering speed (no load) </td>
+            <td colSpan="2" nowrap="nowrap"> Lowering speed (no load) </td>
             <td nowrap="nowrap"> mm/s </td>
             <td nowrap="nowrap"> 350 </td>
             <td nowrap="nowrap"> 350 </td>
@@ -453,7 +453,7 @@ const TableVeiw = () => {
             <td nowrap="nowrap"> 330 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Axle load distribution (full load) (FR/RR) </td>
+            <td colSpan="2" nowrap="nowrap"> Axle load distribution (full load) (FR/RR) </td>
             <td nowrap="nowrap"> kg </td>
             <td nowrap="nowrap"> —— </td>
             <td nowrap="nowrap"> —— </td>
@@ -463,7 +463,7 @@ const TableVeiw = () => {
             <td> 25175/2825 </td>
         </tr>
         <tr>
-            <td colspan="2" nowrap="nowrap"> Axle load distribution (no load) (FR/RR) </td>
+            <td colSpan="2" nowrap="nowrap"> Axle load distribution (no load) (FR/RR) </td>
             <td nowrap="nowrap"> kg </td>
             <td nowrap="nowrap"> —— </td>
             <td nowrap="nowrap"> —— </td>

@@ -28,7 +28,8 @@ export default function Prodct() {
                 <MyCard
                   image={ el.Image }
                   subtitle={ el.name}
-                  hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}`}
+
+                  hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}&typex=1`}
                 />
               </React.Fragment>
             );})
@@ -45,7 +46,7 @@ export default function Prodct() {
                 <MyCard
                   image={ el.Image }
                   subtitle={ el.name}
-                  hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}`}
+                  hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}&typex=2`}
                 />
               </React.Fragment>
             );})

@@ -52,14 +52,14 @@ const TableVeiw = () => {
       <>
    <table class="table ke-zeroborder text-center" cellpadding="1" cellspacing="1">
         <tr>
-            <td colspan="4"> Model </td>
+            <td colSpan="4"> Model </td>
             <td> CPD16SA3 </td>
             <td> CPD18SA3 </td>
             <td> CPD20SA3 </td>
         </tr>
         <tr>
             <td> Rated load </td>
-            <td colspan="2"></td>
+            <td colSpan="2"></td>
             <td> kg </td>
             <td> 1600 </td>
             <td> 1800 </td>
@@ -67,7 +67,7 @@ const TableVeiw = () => {
         </tr>
         <tr>
             <td> Load center distance </td>
-            <td colspan="2"></td>
+            <td colSpan="2"></td>
             <td> mm </td>
             <td> 500 </td>
             <td> 500 </td>
@@ -75,7 +75,7 @@ const TableVeiw = () => {
         </tr>
         <tr>
             <td> Lift height </td>
-            <td colspan="2"></td>
+            <td colSpan="2"></td>
             <td> mm </td>
             <td> 3000 </td>
             <td> 3000 </td>
@@ -83,7 +83,7 @@ const TableVeiw = () => {
         </tr>
         <tr>
             <td> Free lift height </td>
-            <td colspan="2"></td>
+            <td colSpan="2"></td>
             <td> mm </td>
             <td> 150 </td>
             <td> 150 </td>
@@ -94,7 +94,7 @@ const TableVeiw = () => {
             <td></td>
             <td> L×W×T </td>
             <td> mm </td>
-            <td colspan="2"> 1070×100×40 </td>
+            <td colSpan="2"> 1070×100×40 </td>
             <td> 1070×122×40 </td>
         </tr>
         <tr>
@@ -108,7 +108,7 @@ const TableVeiw = () => {
         </tr>
         <tr>
             <td> Minimum turning radius </td>
-            <td colspan="2"></td>
+            <td colSpan="2"></td>
             <td> mm </td>
             <td> 1550 </td>
             <td> 1550 </td>
@@ -116,7 +116,7 @@ const TableVeiw = () => {
         </tr>
         <tr>
             <td> Minimum right angle stacking aisle width </td>
-            <td colspan="2"></td>
+            <td colSpan="2"></td>
             <td> mm </td>
             <td> 3070 </td>
             <td> 3070 </td>
@@ -124,7 +124,7 @@ const TableVeiw = () => {
         </tr>
         <tr>
             <td> Minimum ground clearance </td>
-            <td colspan="2"></td>
+            <td colSpan="2"></td>
             <td> mm </td>
             <td> 102 </td>
             <td> 102 </td>
@@ -132,14 +132,14 @@ const TableVeiw = () => {
         </tr>
         <tr>
             <td> Height of overhead guard </td>
-            <td colspan="2"></td>
+            <td colSpan="2"></td>
             <td> mm </td>
             <td> 1960 </td>
             <td> 1960 </td>
             <td> 2020 </td>
         </tr>
         <tr>
-            <td rowspan="3"> Performance </td>
+            <td rowSpan="3"> Performance </td>
             <td> <br />Maximum travel speed </td>
             <td> Full load </td>
             <td> km/h </td>
@@ -156,14 +156,14 @@ const TableVeiw = () => {
             <td> 200 </td>
         </tr>
         <tr>
-            <td colspan="2"> Maximum gradeability </td>
+            <td colSpan="2"> Maximum gradeability </td>
             <td> % </td>
             <td> 15 </td>
             <td> 15 </td>
             <td> 15 </td>
         </tr>
         <tr>
-            <td rowspan="2"> Dimensions </td>
+            <td rowSpan="2"> Dimensions </td>
             <td> Overall length </td>
             <td> Without forks </td>
             <td> mm </td>
@@ -172,7 +172,7 @@ const TableVeiw = () => {
             <td> 2080 </td>
         </tr>
         <tr>
-            <td colspan="2"> Overall width </td>
+            <td colSpan="2"> Overall width </td>
             <td> mm </td>
             <td> 1066 </td>
             <td> 1066 </td>
@@ -197,7 +197,7 @@ const TableVeiw = () => {
             <td> 48/560 </td>
         </tr>
         <tr>
-            <td rowspan="2"> Motor </td>
+            <td rowSpan="2"> Motor </td>
             <td></td>
             <td> Traveling </td>
             <td> kW </td>
@@ -214,20 +214,20 @@ const TableVeiw = () => {
             <td> 10 </td>
         </tr>
         <tr>
-            <td colspan="4"> Way of control </td>
+            <td colSpan="4"> Way of control </td>
             <td> AC </td>
             <td> AC </td>
             <td> AC </td>
         </tr>
         <tr>
-            <td colspan="3"> Operating pressure </td>
+            <td colSpan="3"> Operating pressure </td>
             <td> Mpa </td>
             <td> 15.5 </td>
             <td> 15.5 </td>
             <td> 15.5 </td>
         </tr>
         <tr>
-            <td colspan="3"> Maximum drawbar pull </td>
+            <td colSpan="3"> Maximum drawbar pull </td>
             <td> kN </td>
             <td> 18 </td>
             <td> 18 </td>

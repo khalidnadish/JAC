@@ -6,5 +6,7 @@
   "description": "The air intake system of the diesel forklift is installed at high level to prevent the dust   from entering the engine, so the lifespan of the engine is extended, accordingly." },
   "detailBtn": "المواصفات",
 "dezel": "رافعات ديزل",
-"electric": "رافعات كهربائية"
+"electric": "رافعات كهربائية",
+"deselF":"ديزل",
+  "electF":"كهربايئ"
 }

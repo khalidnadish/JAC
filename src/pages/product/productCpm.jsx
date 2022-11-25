@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Slider from "react-slick";
-
+import { Link } from "react-router-dom";
 const Wraper = styled.div``;
 /* ------------------------------------------- */
 const ImageWraper = styled.div`
@@ -48,14 +48,78 @@ const SliderWraper = styled.div`
   border-radius: 28px;
 `;
 
-/* ---------------------------------------------- */
+/* ----------------___________------------------------------ */
 const SectionTitle = styled.div`
-  width: 100%;
-  background-color: #f79335;
-  color: black;
-  border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+  width: 80%;
+  /* padding:0 .5rem; */
+  background-color: #474442;
+  border: 1px solid #6d6b6a;
+  color: #dddddd;
+  border-radius: 6px;
+`;
+/* *************************************************** */
+const ModelTxt = styled.p`
+  text-align: ${({ lng }) => (lng === "ar" ? "right" : "left")};
+  /* margin-top: 1.5em; */
+  padding: .5rem;
+  font-size: 1rem;
+  font-family: ${({ lng }) => (lng === "ar" ? "tr" : "Segoe UI")};
 `;
 
+
+/* *************************************************** */
+const LTxt = styled.p`
+  text-align: ${({ lng }) => (lng === "ar" ? "right" : "left")};
+  /* margin-top: 1.5em; */
+  padding: .5rem;
+  font-size: 1rem;
+  font-family: ${({ lng }) => (lng === "ar" ? "tr" : "Segoe UI")};
+`;
+
+/* *************************************************** */
+const RTxt = styled.p`
+  text-align: ${({ lng }) => (lng === "ar" ? "right" : "left")};
+  position:absolute;
+  top:-10px;
+  right:-15px;
+  padding: 0.5rem .5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #000;
+  font-family: ${({ lng }) => (lng === "ar" ? "tr" : "Segoe UI")};
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+`;
+/* -------------------------- */
+const LinkTxt = styled(Link)`
+display: flex;
+padding: 0;
+margin:0;
+
+
+`;
+
+
+
+/* --------------------------------------- */
+const BackArrow = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+  
+  position:absolute;
+  left:-20px;
+  padding: .4rem .5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #777777;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+`;
+
+/* ---------------------------------------------------- */
 const CpmSlider = styled(Slider)`
   border-radius: 18px;
   padding: 5px;
@@ -108,6 +172,12 @@ export default {
   CpmSlider,
   SliderImage,
   ProdctPageWraper,
-  TableWraper
+  TableWraper,
+  // SectionTxt,
+  ModelTxt,
+  RTxt,
+LTxt,
+BackArrow,
+LinkTxt
 
 };
