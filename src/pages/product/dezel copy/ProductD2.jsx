@@ -56,7 +56,7 @@ export default ProductId
 const TableVeiw = () => {
     return (
       <>
-        <table cellpadding="1" cellspacing="1">
+        <table cellPadding="1" cellSpacing="1">
           
           <tbody>
             <tr>

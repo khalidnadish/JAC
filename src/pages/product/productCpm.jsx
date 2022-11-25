@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+const Container = styled.div``;
+
 const Wraper = styled.div``;
+
 /* ------------------------------------------- */
 const ImageWraper = styled.div`
   display: flex;
@@ -45,7 +48,7 @@ const SliderWraper = styled.div`
   margin: auto;
   width: 80%;
   padding: 0;
-  border-radius: 28px;
+  /* border-radius: 28px; */
 `;
 
 /* ----------------___________------------------------------ */
@@ -68,6 +71,9 @@ const ModelTxt = styled.p`
   padding: .5rem;
   font-size: 1rem;
   font-family: ${({ lng }) => (lng === "ar" ? "tr" : "Segoe UI")};
+  @media (max-width: 500px) {
+    font-size: .7rem;
+  }
 `;
 
 
@@ -92,6 +98,9 @@ const RTxt = styled.p`
   background-color: #000;
   font-family: ${({ lng }) => (lng === "ar" ? "tr" : "Segoe UI")};
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  @media (max-width: 500px) {
+    font-size: .7rem;
+  }
 `;
 /* -------------------------- */
 const LinkTxt = styled(Link)`
@@ -111,7 +120,7 @@ align-items: center;
 justify-content: center;
   
   position:absolute;
-  left:-20px;
+  left:0px;
   padding: .4rem .5rem;
   border-radius: 4px;
   font-size: 1rem;
@@ -121,9 +130,10 @@ justify-content: center;
 
 /* ---------------------------------------------------- */
 const CpmSlider = styled(Slider)`
-  border-radius: 18px;
+  /* border-radius: 18px; */
   padding: 5px;
-  background-color: #ccc;
+  
+  background-color: #9c9c9c;
 `;
 
 
@@ -142,10 +152,19 @@ width: 100%;
 
 const TableWraper= styled.div`
  
- 
+ /* max-width: 90vw !important;  */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ /* background-color:red; */
+ padding: 1rem;
 font-size: 1rem;
+margin-top: 1rem;
+overflow: auto;
 @media (max-width: 500px) {
   font-size: .6rem;
+  overflow: auto;
   }
 `;
 
@@ -160,6 +179,31 @@ width: 80%;
 height: auto;
   
 `;
+const SelecttionWraper = styled.div`
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap:1rem;
+width: 100%;
+margin-bottom: 1rem;
+padding:0 10%;
+`;
+
+
+const BtnSelect = styled.div`
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding:1rem;
+border-radius: 4px;
+background-color: #6d6c6c;
+color: #e4e4e4;
+width: 100%;
+font-size: 1.2rem;
+height: 55px;
+cursor: pointer;
+`;
+
 
 export default {
   Txt,
@@ -178,6 +222,9 @@ export default {
   RTxt,
 LTxt,
 BackArrow,
-LinkTxt
+LinkTxt,
+Container,
+SelecttionWraper,
+BtnSelect
 
 };

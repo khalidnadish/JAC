@@ -13,6 +13,7 @@ import SparePart from "./pages/SparePart";
 import PageNotFound from "./pages/404/PageNotFound";
 import cookie from "js-cookie";
 import Product from "./pages/product/Product";
+import Loader from "./component/loader/Loader";
 // import ProductD1 from "./pages/product/dezel/ProductD1";
 // import ProductD2 from "./pages/product/dezel/ProductD2";
 // import ProductD3 from "./pages/product/dezel/ProductD3";
@@ -81,10 +82,11 @@ function App() {
     <>
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <Container>
+          {/* <Loader/> */}
           <BrowserRouter>
             <MainMenu  setLangDirection={setLangDirection} language={language} setLanguage={setLanguage}/>
             <BodyWrapper>
-              <Suspense fallback={<h1>..loading</h1>}>
+              <Suspense fallback={<Loader/>}>
                 <Routes>
                   <Route path="/">
                     <Route index element={<About   />} />

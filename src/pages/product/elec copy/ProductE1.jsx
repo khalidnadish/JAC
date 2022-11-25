@@ -52,7 +52,7 @@ export default ProductId
 const TableVeiw = () => {
     return (
       <>
-      <table class="table ke-zeroborder" cellpadding="1" cellspacing="1"> <tbody><tr>  <td>  Model  </td>
+      <table  cellPadding="1" cellSpacing="1"> <tbody><tr>  <td>  Model  </td>
   <td>  CPD10H,  CPD15H, CPD18H  </td>
  </tr>
  <tr>  <td>  Rated Load Capacity  </td>

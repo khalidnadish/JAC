@@ -50,7 +50,7 @@ export default ProductId
 const TableVeiw = () => {
     return (
       <>
-        <table  class="table ke-zeroborder" cellpadding="1" cellspacing="1">
+        <table   cellPadding="1" cellSpacing="1">
                   <tr >
                     <td colSpan="3" > Model </td>
 					  <td></td>

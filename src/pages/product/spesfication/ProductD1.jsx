@@ -6,16 +6,7 @@ function TableVeiw() {
   return (
     <>
      
-      <table
-        style={{
-          width: "100%",
-          padding: "0",
-          margin: "5px 0 9pt",
-          borderSpacing: "1px",
-          borderCollapse: "separate",
-          border: "1px solid",
-        }}
-      >
+      <table>
         <tbody>
           <tr>
             <td colSpan="3" nowrap="">

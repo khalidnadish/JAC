@@ -53,8 +53,8 @@ export default ProductId
 const TableVeiw = () => {
     return (
       <>
-      <table cellpadding="1" cellspacing="1">
-        <tr class="">
+      <table cellPadding="1" cellSpacing="1">
+        <tr >
             <td colSpan="3" nowrap="nowrap">Model </td>
             <td nowrap="nowrap"> CPCD50J </td>
             <td nowrap="nowrap"> CPCD60J </td>

@@ -7,7 +7,7 @@ import { useParams, useSearchParams } from "react-router-dom";
 
 import { IoMdArrowRoundBack } from 'react-icons/io';
 
-
+import Loader from "../../component/loader/Loader";
 
 function ProductId() {
   const [search, setSearchParams] = useSearchParams();
@@ -52,11 +52,14 @@ if(typex==="1"){
         </cpm.SectionTitle>
         <SliderShow imageFiles={workFile} />
 
+        
+        
+      
+
+        <Suspense fallback={<p>loading...</p>}>
         <cpm.TableWraper>
-          <TableVeiw />
-        </cpm.TableWraper>
-        <Suspense fallback={<h6>loading</h6>}>
           <Tablex />
+          </cpm.TableWraper>
         </Suspense>
       </cpm.ProdctPageWraper>
     </>
@@ -77,6 +80,9 @@ const SliderShow = ({ imageFiles }) => {
     centerPadding: "0px",
     pauseOnHover: true,
     swipeToSlide: true,
+    
+
+
   };
 
   return (
