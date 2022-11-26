@@ -69,7 +69,7 @@ const ModelTxt = styled.p`
   text-align: ${({ lng }) => (lng === "ar" ? "right" : "left")};
   /* margin-top: 1.5em; */
   padding: .5rem;
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: ${({ lng }) => (lng === "ar" ? "tr" : "Segoe UI")};
   @media (max-width: 500px) {
     font-size: .7rem;
@@ -89,13 +89,13 @@ const LTxt = styled.p`
 /* *************************************************** */
 const RTxt = styled.p`
   text-align: ${({ lng }) => (lng === "ar" ? "right" : "left")};
-  position:absolute;
+  /* position:absolute;
   top:-10px;
-  right:-15px;
-  padding: 0.5rem .5rem;
+  right:-15px; */
+  padding: .2rem .5rem;
   border-radius: 4px;
-  font-size: 1rem;
-  background-color: #000;
+  font-size: .9rem;
+  background-color: #098123;
   font-family: ${({ lng }) => (lng === "ar" ? "tr" : "Segoe UI")};
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
   @media (max-width: 500px) {
@@ -111,7 +111,13 @@ margin:0;
 
 `;
 
-
+const VerticalDiv= styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 80%;
+gap: 1em;
+`;
 
 /* --------------------------------------- */
 const BackArrow = styled.div`
@@ -119,8 +125,8 @@ display: flex;
 align-items: center;
 justify-content: center;
   
-  position:absolute;
-  left:0px;
+  /* position:absolute;
+  left:0px; */
   padding: .4rem .5rem;
   border-radius: 4px;
   font-size: 1rem;
@@ -225,6 +231,7 @@ BackArrow,
 LinkTxt,
 Container,
 SelecttionWraper,
-BtnSelect
+BtnSelect,
+VerticalDiv
 
 };

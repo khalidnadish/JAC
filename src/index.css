@@ -56,8 +56,18 @@ tr{
 td{
   border:1px  solid #ccc;
 }
+img{
+  vertical-align: middle;
+  border-style: none;
 
+}
 
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
 
 .slick-slide  {
   background-color: #777;
@@ -111,12 +121,17 @@ table{
   
   }
   table{
-    /* max-width:95vw ; */
-    /* width: 100%; */
-
-    font-size: .6rem;
-    
-
+    max-width:400px ;
+    width: auto;
+    font-size: .5rem;
+    word-break:break-all;
   }
-  
+td{
+
+  word-break:break-all;
+
+}  
+tr{
+  word-break:break-all;
+}
 }

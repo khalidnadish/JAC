@@ -5,7 +5,7 @@ import cpm from "./productCpm";
 import { useTranslation } from "react-i18next";
 import { useParams, useSearchParams } from "react-router-dom";
 
-import { IoMdArrowRoundBack } from 'react-icons/io';
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 import Loader from "../../component/loader/Loader";
 
@@ -17,7 +17,9 @@ function ProductId() {
   const { t } = useTranslation();
   const PX = useParams();
 
-  const Tablex = lazy(() => import(`../product/spesfication/Product${PX.id}.jsx`));
+  const Tablex = lazy(() =>
+    import(`../product/spesfication/Product${PX.id}.jsx`)
+  );
 
   /* ----------create file names in array------------------------------------------------------------ */
   // const locWork = locDir.toUpperCase();
@@ -28,37 +30,41 @@ function ProductId() {
     workFile.push(`/assets/product/${locWork}/${index}.jpg`);
   }
   /* ------------------------------------------------------------------ */
-  let typeName =""
-if(typex==="1"){
-  typeName=`${t("deselF")}`
-}else{
-  typeName=`${t("electF")}`
-}
+  let typeName = "";
+  if (typex === "1") {
+    typeName = `${t("deselF")}`;
+  } else {
+    typeName = `${t("electF")}`;
+  }
   return (
     <>
       <cpm.ProdctPageWraper>
-        <cpm.SectionTitle>
-          {/* <cpm.RTxt>{t("detailBtn")}</cpm.RTxt> */}
+        <cpm.VerticalDiv>
           <cpm.RTxt>{typeName}</cpm.RTxt>
+
+
+          <cpm.SectionTitle>
           <cpm.ModelTxt>{modelx}</cpm.ModelTxt>
-
-            <cpm.BackArrow>
-          <cpm.LinkTxt to="/product">
-              <IoMdArrowRoundBack />
-          </cpm.LinkTxt>
-            </cpm.BackArrow>
-
-
         </cpm.SectionTitle>
+
+
+          <cpm.BackArrow>
+            <cpm.LinkTxt to="/product">
+              <IoMdArrowRoundBack />
+            </cpm.LinkTxt>
+          
+          
+          </cpm.BackArrow>
+        </cpm.VerticalDiv>
+
+        {/* <cpm.SectionTitle>
+          <cpm.ModelTxt>{modelx}</cpm.ModelTxt>
+        </cpm.SectionTitle> */}
         <SliderShow imageFiles={workFile} />
 
-        
-        
-      
-
         <Suspense fallback={<p>loading...</p>}>
-        <cpm.TableWraper>
-          <Tablex />
+          <cpm.TableWraper>
+            <Tablex />
           </cpm.TableWraper>
         </Suspense>
       </cpm.ProdctPageWraper>
@@ -80,9 +86,6 @@ const SliderShow = ({ imageFiles }) => {
     centerPadding: "0px",
     pauseOnHover: true,
     swipeToSlide: true,
-    
-
-
   };
 
   return (

@@ -5,116 +5,16 @@
   "deselF":"Dessel",
   "electF":"Electric",
   "loading":"loading...wait please",
-  "h84": {
-    "title": "Diesel Forklift",
-    "subtitle": "(3-3.5T Forklift Truck, H Series)",
-    "description": "The air intake system of the diesel forklift is installed at high level to prevent the dust   from entering the engine, so the lifespan of the engine is extended, accordingly."
-  },
-
-  "h45": {
-    "title": "Diesel Forklift",
-    "subtitle": "(4-4.5T Forklift Truck, H Series)",
-    "description": ""
-  },
-  "h47": {
-    "title": "Diesel Forklift",
-    "subtitle": "(5-7T Forklift Truck, H Series)",
-    "description": ""
-  },
-  "h59": {
-    "title": "Diesel Forklift",
-    "subtitle": "(3-3.5T Forklift Truck, J Series)",
-    "description": ""
-  },
-  "h73": {
-    "title": "Diesel Forklift",
-    "subtitle": "(2-2.5T Four Wheel Forklift, J Series)",
-    "description": ""
-  },
-  "D1": {
-    "title": "Diesel Forklift",
-    "subtitle": "(1-1.8T Forklift Truck, H Series)",
-    "description": ""
-  },
-  "D2": {
-    "title": "Diesel Forklift",
-    "subtitle": "(2-2.5T Forklift Truck, H Series)",
-    "description": ""
-  },
-  "D3": {
-    "title": "Diesel Forklift",
-    "subtitle": "(2-2.5T Forklift Truck, J Series)",
-    "description": ""
-  },
-  "D4": {
-    "title": "Diesel Forklift",
-    "subtitle": "(3-3.5T Forklift Truck, H Series)",
-    "description": ""
-  },
-  "D5": {
-    "title": "Diesel Forklift",
-    "subtitle": "(3-3.5T Forklift Truck, J Series)",
-    "description": ""
-  },
-  "D6": {
-    "title": "Diesel Forklift",
-    "subtitle": "(4-4.5T Forklift Truck, H Series)",
-    "description": ""
-  },
-  "D7": {
-    "title": "Diesel Forklift",
-    "subtitle": "(5-7T Forklift Truck, H Series)",
-    "description": ""
-  },
-  "D8": {
-    "title": "Diesel Forklift",
-    "subtitle": "(8-10T Forklift Truck, H Series)",
-    "description": ""
-  },
-  "D9": {
-    "title": "Diesel Forklift",
-    "subtitle": "(16T Forklift Truck)",
-    "description": ""
-  },
-
-  "E1": {
-    "title": "Electric Forklift",
-    "subtitle": "(1.6-2T 3-Wheel Counterbalance Battery Forklift)",
-    "description": ""
-  },
-  "E2": {
-    "title": "Electric Forklift",
-    "subtitle": "(2-2.5T Four Wheel Forklift, J Series)",
-    "description": ""
-  },
-  "E3": {
-    "title": "Electric Forklift",
-    "subtitle": "(2-2.5T Four Wheel Forklift,S Series)",
-    "description": ""
-  },
-  "E4": {
-    "title": "Electric Forklift",
-    "subtitle": "(2-3T Four Wheel Forklift, JE Series)",
-    "description": ""
-  },
-  "E5": {
-    "title": "Electric Forklift",
-    "subtitle": "(3-3.5T Four Wheel Forklift, J Series)",
-    "description": ""
-  },
-  "E6": {
-    "title": "Electric Forklift",
-    "subtitle": "(3-5T Four Wheel Forklift, HE Series)",
-    "description": ""
-  },
-  "E7": {
-    "title": "Electric Forklift",
-    "subtitle": "(4-6T Four Wheel Forklift)",
-    "description": ""
-  },
-
   "dezel": "Diesel Forklift",
-  "electric": "Electric Forklift"
+  "electric": "Electric Forklift",
+  "email":"E-mail",
+  "name":"Name",
+  "company":"Company",
+  "phone":"Phone",
+  "whatsApp":"WhatsApp",
+  "msg":"Message",
+  "sendBtn":"Send"
+
 }
 
  

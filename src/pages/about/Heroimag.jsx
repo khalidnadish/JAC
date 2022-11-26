@@ -5,7 +5,8 @@ function Heroimag() {
   return (
     <>
       <cpm.ImageWraper>
-        <cpm.Image  src="/heroImage.webp" />
+        <cpm.Image  src="/banner.webp" />
+        {/* <cpm.Image  src="/heroImage.webp" /> */}
       </cpm.ImageWraper>
     </>
   );

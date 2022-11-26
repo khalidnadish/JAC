@@ -141,7 +141,7 @@ const LOGO = () => {
           my: 2,
         }}
       >
-        <img src={"/logo.png"} width={"100"} loading={"lazy"} />
+        <img src={"/webLogo1.png"} width={"220"} loading={"lazy"} />
       </Box>
     </>
   );
