@@ -11,7 +11,7 @@ import prod from "../product/product.json";
 import diselProduct from "./Dproduct.json";
 import electricProduct from "./Eproduct.json";
 import { FaGasPump } from "react-icons/fa";
-import { GiForklift, GiElectric,GiFuelTank } from "react-icons/gi";
+import { GiForklift, GiElectric, GiFuelTank } from "react-icons/gi";
 import { t } from "i18next";
 
 export default function Prodct() {
@@ -19,18 +19,18 @@ export default function Prodct() {
 
   return (
     <>
-    <cpm.Container>
-      <BtnControl setToggleProduct={setToggleProduct} />
+      <cpm.Container>
+        <BtnControl setToggleProduct={setToggleProduct} />
 
-      <cpm.CardWrapper>
-        {toggleProduct === 0 && (
-          <>
-            <DeselProduct /> <ElectricProduct />
-          </>
-        )}
-        {toggleProduct === 1 && <DeselProduct />}
-        {toggleProduct === 2 && <ElectricProduct />}
-      </cpm.CardWrapper>
+        <cpm.CardWrapper>
+          {toggleProduct === 0 && (
+            <>
+              <DeselProduct /> <ElectricProduct />
+            </>
+          )}
+          {toggleProduct === 1 && <DeselProduct />}
+          {toggleProduct === 2 && <ElectricProduct />}
+        </cpm.CardWrapper>
       </cpm.Container>
     </>
   );
@@ -39,11 +39,20 @@ export default function Prodct() {
 const BtnControl = ({ setToggleProduct }) => {
   return (
     <>
-    <cpm.SelecttionWraper>
-      <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 0)}><FaGasPump/><GiElectric/></cpm.BtnSelect>
-      <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 1)}><FaGasPump/>{t("deselF")}</cpm.BtnSelect>
-      <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 2)}><GiElectric/>{t("electF")} </cpm.BtnSelect>
-      </cpm.SelecttionWraper>  
+      <cpm.SelecttionWraper>
+        <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 0)}>
+          <FaGasPump />
+          <GiElectric />
+        </cpm.BtnSelect>
+        <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 1)}>
+          <FaGasPump />
+          {t("deselF")}
+        </cpm.BtnSelect>
+        <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 2)}>
+          <GiElectric />
+          {t("electF")}{" "}
+        </cpm.BtnSelect>
+      </cpm.SelecttionWraper>
     </>
   );
 };
@@ -98,7 +107,7 @@ const MyCard = ({ image, title, subtitle, description, hrefLink }) => {
   const { t } = useTranslation();
   return (
     <>
-      <Card sx={{ maxWidth: 300, minWidth: 300 }}>
+      <Card sx={{ maxWidth: 350, minWidth: 350 }}>
         <CardActionArea>
           <CardMedia
             component="img"

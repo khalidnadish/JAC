@@ -14,6 +14,7 @@ import PageNotFound from "./pages/404/PageNotFound";
 import cookie from "js-cookie";
 import Product from "./pages/product/Product";
 import Loader from "./component/loader/Loader";
+import Footer from "./component/footer/Footer";
  
 import { FiPhoneCall } from 'react-icons/fi';
 
@@ -33,18 +34,19 @@ const Container = styled.div`
 
 const BodyWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   color: ${({ theme }) => theme.text};
   position: absolute;
-  top:80px;
+  /* top:80px; */
   background-color: ${({ theme }) => theme.bgLighter};
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   z-index:1;
   @media (max-width: 500px) {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     flex-direction: column;
     justify-content: center;
-    top:80px;
+    /* top:80px; */
   }
 `;
 
@@ -80,12 +82,12 @@ function App() {
   return (
     <>
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-        <Container>
         <CallMe/>
+        <Container>
           {/* <Loader/> */}
           <BrowserRouter>
-            <MainMenu  setLangDirection={setLangDirection} language={language} setLanguage={setLanguage}/>
             <BodyWrapper>
+            <MainMenu  setLangDirection={setLangDirection} language={language} setLanguage={setLanguage}/>
               <Suspense fallback={<Loader/>}>
                 <Routes>
                   <Route path="/">
@@ -99,7 +101,9 @@ function App() {
                   </Route>
                 </Routes>
               </Suspense>
+            <Footer />
               
+         
             </BodyWrapper>
           </BrowserRouter>
         </Container>

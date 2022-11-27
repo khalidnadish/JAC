@@ -60,6 +60,7 @@ gap: .5rem;
   box-shadow: 1px 1px 5px #555;
   background-color: #32a852;
   color: white;
+  font-family:"cb"
   
   
 `;

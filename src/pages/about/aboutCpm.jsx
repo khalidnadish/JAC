@@ -35,6 +35,7 @@ const CardWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  width: 95%;
   @media (max-width: 500px) {
     flex-direction: column;
   }
@@ -43,10 +44,10 @@ const CardWrapper = styled.div`
 `;
 /* ---------------------------------------------- */
 const SectionTitle= styled.div`
-width: 100%;
+width: 80%;
 background-color: #f79335;
 color: black;
-border-radius: 8px;
+border-radius: 4px;
 `;
 
 export default { Txt, Wraper, ImageWraper, Image, CardWrapper,SectionTitle };

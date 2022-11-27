@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-const Container = styled.div``;
+const Container = styled.div`
+margin-top: 1rem;
+`;
 
 const Wraper = styled.div``;
 
@@ -39,8 +41,10 @@ const CardWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  width: 98%;
   @media (max-width: 500px) {
     flex-direction: column;
+    
   }
 `;
 

@@ -12,14 +12,50 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import menuItem from "./enMenu.json";
 import armenuItem from "./arMenu.json";
+import styled from "styled-components";
 import i18n from "../../i18n";
+const LogoWraper = styled.div`
+width:350px;
+height: 80px;
+position: relative;;
+background-image: url("/Wb1.png");
+background-repeat: no-repeat;
+background-size: cover;
+padding: 1rem;
+`;
+const LogoImage = styled.img`
+width: 100%;
+height: auto;
+object-fit: contain;
 
-// const pages = menuItem.map((el) => el.name);
+`;
 
-// console.log(langx);
+const LogoTxtA = styled.p`
+position: absolute;
+bottom:5px;
+left:0;
+/* color:black; */
+font-size:.9rem;
+font-family: "tb";
+@media (max-width: 500px) {
+  font-size:.7rem;
+  }
+
+`;
+const LogoTxtE = styled.p`
+position: absolute;
+bottom:27px;
+left:0;
+/* color:black; */
+font-size:.9rem;
+font-family: "tb";
+@media (max-width: 500px) {
+  font-size:.7rem;
+  }
 
 
-// console.log(pages);
+`;
+
 
 function MainMenu({ setLangDirection,language, setLanguage }) {
   let pages = menuItem;
@@ -40,9 +76,21 @@ function MainMenu({ setLangDirection,language, setLanguage }) {
     setAnchorElNav(null);
   };
 
+const lang=()=>{
+  setLanguage(pre=>pre === "ar" ? "en" : "ar");
+  if (language === "ar") {
+    i18n.changeLanguage("ar");
+    setLangDirection("rtl");
+  } else {
+    i18n.changeLanguage("en");
+    setLangDirection("ltr");
+  }
+  handleCloseNavMenu()
+}
+  
   return (
     <AppBar position="sticky" color="warning" sx={{zIndex:100}}>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{display:"flex",justifyContent:"space-between"}}>
         <Toolbar disableGutters>
           {/* ---------------------Moobilmenu Box Menu ---------------------- */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
@@ -80,21 +128,27 @@ function MainMenu({ setLangDirection,language, setLanguage }) {
                   to={page.link}
                   key={page.id}
                   onClick={handleCloseNavMenu}
+                  sx={{display:"flex",justifyContent:"end"}}
                  
                 >
                   <Typography textAlign="left" sx={{ fontFamily:"cb" }}>{page.name}</Typography>
                 </MenuItem>
               ))}
+              <MenuItem  sx={{display:"flex",justifyContent:"center"}}  onClick={lang}>
+              {/* <Typography textAlign="left" sx={{ fontFamily:"cb" }}>df</Typography> */}
+              <img src={`/${language}.svg`} width={"25"} loading={"lazy"} />
+              </MenuItem>
+               
             </Menu>
           </Box>
           {/* ---------------------logo Box ---------------------- */}
-          <LOGO />
+          
           {/* --------------------Desk top -menu Box Menu ---------------------- */}
           <Box
             sx={{
               flexGrow: 1,
               display: { xs: "none", sm: "flex" },
-              justifyContent: "center",
+              justifyContent: "space-evenly",
               alignItems: "center",
               gap: "1rem",
               direction:language==="ar"? "rtl":"ltr"
@@ -116,14 +170,15 @@ function MainMenu({ setLangDirection,language, setLanguage }) {
           </Box>
 
           {/* ---------------------Language Box ---------------------- */}
-          <Language
+          {/* <Language
             language={language}
             setLanguage={setLanguage}
             setLangDirection={setLangDirection}
            
           
-          />
+          /> */}
         </Toolbar>
+        <LOGO />
       </Container>
     </AppBar>
   );
@@ -133,16 +188,30 @@ export default MainMenu;
 const LOGO = () => {
   return (
     <>
-      <Box
+
+<LogoWraper>
+<LogoTxtA>موسسة سعيد الخريمي التجارية</LogoTxtA>
+<LogoTxtE>
+  Saeed Alkhuraimi Trading Est
+  </LogoTxtE>
+
+
+ {/* <LogoImage  src={"/b1.png"}/>  */}
+</LogoWraper>
+      {/* <Box
         sx={{
+          display: 'flex',
           flexGrow: 1,
-          // backgroundColor: "darkblue",
+        
           width: { xs: "100%", sm: "15%" },
+          justifyContent: "end",
+          alignItems: "center",
           my: 2,
         }}
       >
-        <img src={"/webLogo1.png"} width={"220"} loading={"lazy"} />
-      </Box>
+        
+        <img src={"/b1.png"} width={"150"} loading={"lazy"} />
+      </Box> */}
     </>
   );
 };
@@ -155,9 +224,7 @@ const Language = ({ language, setLanguage, setLangDirection }) => {
           display: "flex",
           justifyContent: "center",
           flexGrow: 1,
-          width: "15%",
-          
-          
+          width: "30px",
         }}
         onClick={() => {
           setLanguage(pre=>pre === "ar" ? "en" : "ar");
@@ -176,20 +243,19 @@ const Language = ({ language, setLanguage, setLangDirection }) => {
         sx={{
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           width: "fit-content",
           border: ".5px solid rgba(255,255,255,0.4)",
-          padding: "3px",
+          padding: "2px",
           borderRadius: "4px",
         }}
        
       >
-
-
-
-
-        <img src={`/${language}.svg`} width={"30"} loading={"lazy"} />
+        <img src={`/${language}.svg`} width={"25"} loading={"lazy"} />
         </Box>
       </Box>
     </>
   );
 };
+
+
