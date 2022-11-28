@@ -142,7 +142,15 @@ table{
   background-color: rgb(68, 68, 68);
 
 }
+.mainloader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
 
+
+}
 @media screen and (max-width: 500px) {
 
   body{

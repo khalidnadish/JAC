@@ -11,8 +11,11 @@ import { useTranslation } from "react-i18next";
 import diselProduct from "./Dproduct.json";
 import electricProduct from "./Eproduct.json";
 import { FaGasPump } from "react-icons/fa";
-import { GiForklift, GiElectric, GiFuelTank } from "react-icons/gi";
+import { GiForklift, GiElectric } from "react-icons/gi";
 import { t } from "i18next";
+import { TbEngine } from "react-icons/tb";
+
+
 
 export default function Prodct() {
   const [toggleProduct, setToggleProduct] = useState(0);
@@ -41,18 +44,29 @@ const BtnControl = ({ setToggleProduct }) => {
     <>
       <cpm.SelecttionWraper>
         <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 0)}>
+        <GiForklift size={"1.5rem"} />
+          <div style={{display:"flex",gap:"15px"}}>
+
           <FaGasPump />
           <GiElectric />
+          </div>
         </cpm.BtnSelect>
         <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 1)}>
-          <FaGasPump />
+          <GiForklift size={"1.5rem"} />
           {t("deselF")}
         </cpm.BtnSelect>
         <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 2)}>
-          <GiElectric />
-          {t("electF")}{" "}
+          <GiForklift  size={"1.5rem"}/>
+          {t("electF")} 
+        </cpm.BtnSelect>
+        <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 2)}>
+          <TbEngine size={"1.5rem"} />
+          {t("engine")} 
         </cpm.BtnSelect>
       </cpm.SelecttionWraper>
+
+
+      
     </>
   );
 };
