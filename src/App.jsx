@@ -19,6 +19,8 @@ const SparePart = lazy(() => import("./pages/SparePart"));
 const PageNotFound = lazy(() => import("./pages/404/PageNotFound"));
 const Product = lazy(() => import("./pages/product/Product"));
 const Footer = lazy(() => import("./component/footer/Footer"));
+const DezelEngine = lazy(() => import("./pages/product/Dezelengine"));
+const GezelEngine = lazy(() => import("./pages/product/Gezelengine"));
 
 import cpm from "./cpmApp";
 
@@ -63,6 +65,9 @@ function App() {
                         <Route path="about" element={<About />} />
                         <Route path="contact" element={<Contact />} />
                         <Route path="product" element={<Product />} />
+                        <Route path="dezelengine" element={<DezelEngine />} />
+                        <Route path="gezelengine" element={<GezelEngine />} />
+                        
                         <Route
                           path="product/:id/:filesNO"
                           element={<ProductId />}

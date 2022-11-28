@@ -14,6 +14,8 @@ import { FaGasPump } from "react-icons/fa";
 import { GiForklift, GiElectric } from "react-icons/gi";
 import { t } from "i18next";
 import { TbEngine } from "react-icons/tb";
+import Dezelengine from "./Dezelengine"
+
 
 
 
@@ -33,6 +35,7 @@ export default function Prodct() {
           )}
           {toggleProduct === 1 && <DeselProduct />}
           {toggleProduct === 2 && <ElectricProduct />}
+          {toggleProduct === 3 && <Engine />}
         </cpm.CardWrapper>
       </cpm.Container>
     </>
@@ -59,7 +62,7 @@ const BtnControl = ({ setToggleProduct }) => {
           <GiForklift  size={"1.5rem"}/>
           {t("electF")} 
         </cpm.BtnSelect>
-        <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 2)}>
+        <cpm.BtnSelect onClick={() => setToggleProduct((pre) => 3)}>
           <TbEngine size={"1.5rem"} />
           {t("engine")} 
         </cpm.BtnSelect>
@@ -71,7 +74,7 @@ const BtnControl = ({ setToggleProduct }) => {
   );
 };
 const DeselProduct = () => {
-  const { t } = useTranslation();
+  const  { t } = useTranslation();
 
   return (
     <>
@@ -117,6 +120,37 @@ const ElectricProduct = () => {
           </React.Fragment>
         );
       })}
+    </>
+  );
+};
+
+
+
+
+
+const Engine = () => {
+  const { t } = useTranslation();
+
+  return (
+    <>
+      {/* --------------Loop For Electric Product ---------------------- */}
+      <cpm.SectionTitle>{t("engine")}</cpm.SectionTitle>
+
+      <MyCard
+              image={"assets/product/Engine/d.jpg"}
+              subtitle={"Diesel Engine"}
+              hrefLink={"/dezelengine"}
+              gazoline={t("deselF")}
+            />
+            <MyCard
+              image={"assets/product/Engine/g.jpg"}
+              subtitle={"Petrol Engine"}
+              hrefLink={"/gezelengine"}
+              gazoline={t("electF")}
+            />
+
+
+ 
     </>
   );
 };
