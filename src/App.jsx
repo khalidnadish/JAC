@@ -5,12 +5,9 @@ import { darkTheme, lightTheme } from "./component/utils/Theme";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Loader from "./component/loader/Loader";
-
 import CssBaseline from "@mui/material/CssBaseline";
 import { FiPhoneCall } from "react-icons/fi";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-
-
 const MainMenu = lazy(() => import("./component/menu/MainMenu"));
 const About = lazy(() => import("./pages/about/About"));
 const Contact = lazy(() => import("./pages/contact/Contact"));
