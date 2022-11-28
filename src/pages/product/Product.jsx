@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions, Chip } from "@mui/material";
 import cpm from "./productCpm";
 import { useTranslation } from "react-i18next";
-import prod from "../product/product.json";
+
 import diselProduct from "./Dproduct.json";
 import electricProduct from "./Eproduct.json";
 import { FaGasPump } from "react-icons/fa";
@@ -72,6 +72,7 @@ const DeselProduct = () => {
               image={el.Image}
               subtitle={el.name}
               hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}&typex=1`}
+              gazoline={t("deselF")}
             />
           </React.Fragment>
         );
@@ -79,6 +80,8 @@ const DeselProduct = () => {
     </>
   );
 };
+
+
 const ElectricProduct = () => {
   const { t } = useTranslation();
 
@@ -95,6 +98,7 @@ const ElectricProduct = () => {
               image={el.Image}
               subtitle={el.name}
               hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}&typex=2`}
+              gazoline={t("electF")}
             />
           </React.Fragment>
         );
@@ -103,11 +107,11 @@ const ElectricProduct = () => {
   );
 };
 
-const MyCard = ({ image, title, subtitle, description, hrefLink }) => {
+const MyCard = ({ image, title, subtitle, description, hrefLink ,gazoline}) => {
   const { t } = useTranslation();
   return (
     <>
-      <Card sx={{ maxWidth: 350, minWidth: 350 }}>
+      <Card sx={{ maxWidth:{xs:"90%" ,md: "30%"}, minWidth:{xs:"90%" ,md: "30%"} }}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -133,19 +137,21 @@ const MyCard = ({ image, title, subtitle, description, hrefLink }) => {
             size="small"
             variant="contained"
             fullWidth
-            color="warning"
+            color="success"
+            sx={{ mx: "5px" }}
             component={Link}
             to={hrefLink}
           >
             <Typography
               variant="body2"
               textAlign={"left"}
-              color="text.secondary"
+              color="text.white"
               sx={{ fontFamily: "tb" }}
             >
               {t("detailBtn")}
             </Typography>
           </Button>
+          <Chip size="small" variant="filled" color="primary" label={gazoline} sx={{ fontFamily: "tb" }}/>
         </CardActions>
       </Card>
     </>

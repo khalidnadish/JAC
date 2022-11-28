@@ -15,26 +15,27 @@ import armenuItem from "./arMenu.json";
 import styled from "styled-components";
 import i18n from "../../i18n";
 const LogoWraper = styled.div`
-width:350px;
-height: 80px;
+max-width: 300px;
+width:100px;
+height: 70px;
 position: relative;;
-background-image: url("/Wb1.png");
+background-image: url("/Wb2.png");
 background-repeat: no-repeat;
 background-size: cover;
-padding: 1rem;
+/* border:1px solid; */
+border-radius: 8px;
+/* margin: 0 10px 0 30px; */
+/* padding: 1rem; */
 `;
-const LogoImage = styled.img`
-width: 100%;
-height: auto;
-object-fit: contain;
 
-`;
 
 const LogoTxtA = styled.p`
+
 position: absolute;
 bottom:5px;
-left:0;
-/* color:black; */
+left:100px;
+
+ 
 font-size:.9rem;
 font-family: "tb";
 @media (max-width: 500px) {
@@ -44,9 +45,9 @@ font-family: "tb";
 `;
 const LogoTxtE = styled.p`
 position: absolute;
-bottom:27px;
-left:0;
-/* color:black; */
+bottom:17px;
+left:110px;
+ 
 font-size:.9rem;
 font-family: "tb";
 @media (max-width: 500px) {
@@ -89,11 +90,11 @@ const lang=()=>{
 }
   
   return (
-    <AppBar position="sticky" color="warning" sx={{zIndex:100}}>
-      <Container maxWidth="xl" sx={{display:"flex",justifyContent:"space-between"}}>
-        <Toolbar disableGutters>
+    <AppBar position="sticky" color="warning" sx={{zIndex:100 }}>
+      <Container maxWidth="xl" sx={{display:"flex",justifyContent:"space-between",}}>
+        <Toolbar disableGutters >
           {/* ---------------------Moobilmenu Box Menu ---------------------- */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }}}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -109,17 +110,20 @@ const lang=()=>{
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "left",
+                horizontal: "right",
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "left",
+                horizontal: "right",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+                padding: 0,
+                margin: 0,
+                
               }}
             >
               {pages.map((page) => (
@@ -135,12 +139,15 @@ const lang=()=>{
                 </MenuItem>
               ))}
               <MenuItem  sx={{display:"flex",justifyContent:"center"}}  onClick={lang}>
-              {/* <Typography textAlign="left" sx={{ fontFamily:"cb" }}>df</Typography> */}
+              
               <img src={`/${language}.svg`} width={"25"} loading={"lazy"} />
               </MenuItem>
                
             </Menu>
           </Box>
+
+
+          
           {/* ---------------------logo Box ---------------------- */}
           
           {/* --------------------Desk top -menu Box Menu ---------------------- */}
@@ -165,8 +172,17 @@ const lang=()=>{
               >
                 {page.name}
               </Button>
+
+
+
+
               // </Link>
             ))}
+            <Button  sx={{display:"flex",justifyContent:"center"}}  onClick={lang}>
+              
+              <img src={`/${language}.svg`} width={"25"} loading={"lazy"} />
+              </Button>
+              
           </Box>
 
           {/* ---------------------Language Box ---------------------- */}
@@ -190,28 +206,14 @@ const LOGO = () => {
     <>
 
 <LogoWraper>
-<LogoTxtA>موسسة سعيد الخريمي التجارية</LogoTxtA>
-<LogoTxtE>
-  Saeed Alkhuraimi Trading Est
-  </LogoTxtE>
 
 
- {/* <LogoImage  src={"/b1.png"}/>  */}
+  
 </LogoWraper>
-      {/* <Box
-        sx={{
-          display: 'flex',
-          flexGrow: 1,
-        
-          width: { xs: "100%", sm: "15%" },
-          justifyContent: "end",
-          alignItems: "center",
-          my: 2,
-        }}
-      >
-        
-        <img src={"/b1.png"} width={"150"} loading={"lazy"} />
-      </Box> */}
+<LogoTxtA>موسسة سعيد الخريمي التجارية</LogoTxtA> 
+<LogoTxtE>   Saeed Alkhuraimi Trading Est </LogoTxtE>
+
+      
     </>
   );
 };

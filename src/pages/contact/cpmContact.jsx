@@ -86,6 +86,33 @@ const SectionTitle = styled.div`
   border-radius: 8px;
 `;
 
+
+
+const Input1 = styled.input`
+  
+  border-bottom: 1px solid ${({ theme }) => theme.soft};
+  color: black;
+  background-color: white;
+
+  outline: none;
+  padding: 5px;
+  width: 100%;
+  margin-top: 15px;
+`;
+
+
+const Inputarea = styled.textarea`
+  
+  border-bottom: 1px solid ${({ theme }) => theme.soft};
+  color: black;
+  background-color: white;
+  resize: vertical;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+  margin-top: 15px;
+`;
+
 export default {
   Txt,
   Wraper,
@@ -94,5 +121,7 @@ export default {
   SectionTitle,
   InputWraper,
   LabelTxt,
-  SendBtn
+  SendBtn,
+  Input1,
+  Inputarea
 };

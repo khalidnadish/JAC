@@ -19,8 +19,7 @@ export default function Prodct() {
     
 
       <cpm.CardWrapper>
-        {/* <TableVeiw/> */}
-        <cpm.SectionTitle>{t("dezel")}</cpm.SectionTitle>
+        {/* <cpm.SectionTitle>{t("dezel")}</cpm.SectionTitle> */}
         <MyCard
           image={prod.D1.aboutPic}
           // title={t("D1.title")}
@@ -39,12 +38,12 @@ export default function Prodct() {
           subtitle={prod.D3.name}
           description={t("deselF")}
         />
-        <MyCard
+        {/* <MyCard
           image={prod.D4.aboutPic}
           title={t("D4.title")}
           subtitle={prod.D4.name}
           description={t("deselF")}
-        />
+        /> */}
         {/* <MyCard
           image={prod.D5.aboutPic}
           title={t("D5.title")}
@@ -82,7 +81,7 @@ export default function Prodct() {
           description={t("deselF")}
         /> */}
         {/* ------------------------------------------------------------------- */}
-        <cpm.SectionTitle>{t("electric")}</cpm.SectionTitle>
+        {/* <cpm.SectionTitle>{t("electric")}</cpm.SectionTitle> */}
         <EMyCard
           image={prod.E1.aboutPic}
           title={t("E1.title")}
@@ -102,13 +101,13 @@ export default function Prodct() {
           subtitle={prod.E3.name}
           description={t("electF")}
         />
-        <EMyCard
+        {/* <EMyCard
           image={prod.E4.aboutPic}
           title={t("E4.title")}
           subtitle={prod.E4.name}
           description={t("electF")}
-        />
-        <EMyCard
+        /> */}
+        {/* <EMyCard
           image={prod.E5.aboutPic}
           title={t("E5.title")}
           subtitle={prod.E5.name}
@@ -125,7 +124,7 @@ export default function Prodct() {
           title={t("E7.title")}
           subtitle={prod.E7.name}
           description={t("electF")}
-        />
+        /> */}
         {/* <EMyCard
           image={prod.E8.aboutPic}
           title={t("E8.title")}
@@ -155,7 +154,7 @@ const EMyCard = ({ image, title, subtitle, description ,borderColor}) => {
   const { t } = useTranslation();
   return (
     <>
-      <Card sx={{ maxWidth: 400, minWidth: 400 }}>
+      <Card sx={{ maxWidth: {xs:"85%", md:"25%"}, minWidth: {xs:"85%", md:"25%"}  }}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -199,7 +198,7 @@ const MyCard = ({ image, title, subtitle, description ,borderColor}) => {
   const { t } = useTranslation();
   return (
     <>
-      <Card sx={{ maxWidth: 400, minWidth: 400 }}>
+      <Card sx={{ maxWidth: {xs:"85%", md:"25%"}, minWidth: {xs:"85%", md:"25%"}  }}>
         <CardActionArea>
           <CardMedia
             component="img"

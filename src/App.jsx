@@ -15,6 +15,7 @@ import cookie from "js-cookie";
 import Product from "./pages/product/Product";
 import Loader from "./component/loader/Loader";
 import Footer from "./component/footer/Footer";
+import CssBaseline from '@mui/material/CssBaseline';
  
 import { FiPhoneCall } from 'react-icons/fi';
 
@@ -22,13 +23,16 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
   position: relative;
-  max-width: 100vw;
+  
   min-width: 300px;
   width: 100%;
   max-height: 100vh;
   height: 100%;
+  /* margin:auto; */
   background-color: ${({ theme }) => theme.bgLighter};
+  
  z-index: 0;
 `;
 
@@ -38,17 +42,24 @@ const BodyWrapper = styled.div`
   width: 100%;
   color: ${({ theme }) => theme.text};
   position: absolute;
-  /* top:80px; */
+ 
   background-color: ${({ theme }) => theme.bgLighter};
-  /* padding: 10px 20px; */
+  padding: 10px 10px;
   z-index:1;
   @media (max-width: 500px) {
     /* padding: 10px 20px; */
     flex-direction: column;
     justify-content: center;
+    background-color:"green";
     /* top:80px; */
   }
 `;
+
+
+
+
+
+
 
 const CallBtn = styled.div`
   display: flex;
@@ -62,6 +73,7 @@ const CallBtn = styled.div`
   max-height: 60px;
   width: 100%;
   height: 100%;
+  border:2px solid #fff;
   
   border-radius: 50px!important;
   box-shadow: 1px 1px 5px #555;
@@ -82,6 +94,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <CssBaseline />
         <CallMe/>
         <Container>
           {/* <Loader/> */}
@@ -128,6 +141,6 @@ function App() {
 export default App;
 const  CallMe=() => {return(<>
 
-<CallBtn><FiPhoneCall size={"1.3rem"}/></CallBtn>
+<CallBtn><FiPhoneCall size={"1.3rem"} color="white"/></CallBtn>
 
 </>)}

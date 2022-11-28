@@ -13,6 +13,7 @@ function About({ language }) {
       <cpm.Wraper>
         <Heroimag />
         <Typo />
+        <cpm.Hr/>
         <Prodct />
       </cpm.Wraper>
     </>

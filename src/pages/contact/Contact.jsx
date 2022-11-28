@@ -11,33 +11,33 @@ function Contact() {
         {/* -------------------------------------------------- */}
         <cpm.InputWraper width={"100%"}>
           <cpm.LabelTxt>{t("email")} *</cpm.LabelTxt>
-          <cpm.Input />
+          <cpm.Input1 />
         </cpm.InputWraper>
         {/* -------------------------------------------------- */}
         <cpm.InputWraper width={"100%"}>
           <cpm.LabelTxt>{t("name")} *</cpm.LabelTxt>
-          <cpm.Input />
+          <cpm.Input1 />
         </cpm.InputWraper>
         {/* -------------------------------------------------- */}
         <cpm.InputWraper width={"100%"}>
           <cpm.LabelTxt>{t("company")}</cpm.LabelTxt>
-          <cpm.Input />
+          <cpm.Input1 />
         </cpm.InputWraper>
         {/* -------------------------------------------------- */}
 
         <cpm.InputWraper width={"48%"}>
           <cpm.LabelTxt>{t("phone")} *</cpm.LabelTxt>
-          <cpm.Input />
+          <cpm.Input1 />
         </cpm.InputWraper>
         {/* -------------------------------------------------- */}
         <cpm.InputWraper width={"48%"}>
           <cpm.LabelTxt>{t("whatsApp")}</cpm.LabelTxt>
-          <cpm.Input />
+          <cpm.Input1 />
         </cpm.InputWraper>
         {/* -------------------------------------------------- */}
         <cpm.InputWraper width={"100%"}>
           <cpm.LabelTxt>{t("msg")}</cpm.LabelTxt>
-          <cpm.Input />
+          <cpm.Inputarea rows={"4"} />
         </cpm.InputWraper>
         <cpm.SendBtn>
           <>{t("sendBtn")}</>

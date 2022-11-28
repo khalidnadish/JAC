@@ -35,19 +35,28 @@ const CardWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  width: 95%;
+  width: 100%;
+  /* background-color: red; */
   @media (max-width: 500px) {
     flex-direction: column;
+    justify-content: center;
+   
   }
  
 
 `;
 /* ---------------------------------------------- */
 const SectionTitle= styled.div`
-width: 80%;
+/* width: 80%; */
 background-color: #f79335;
 color: black;
+padding: 0 1rem;
 border-radius: 4px;
 `;
 
-export default { Txt, Wraper, ImageWraper, Image, CardWrapper,SectionTitle };
+const Hr = styled.hr`
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-color: rgba(255,255,255,.3);
+`;
+export default { Txt, Wraper, ImageWraper, Image, CardWrapper,SectionTitle,Hr };
