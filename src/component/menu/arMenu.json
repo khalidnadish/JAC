@@ -1,6 +1,6 @@
 [
   { "id": 1, "name": "الرئسية", "icon": "","link":"/about" },
   { "id": 2, "name": "المنتجات", "icon": "","link":"/product" },
-  { "id": 3, "name": "قطع الغيار", "icon": "","link":"/parePart" },
+  { "id": 3, "name": "اكسسوارات", "icon": "","link":"/accessory" },
   { "id": 4, "name": "تواصل معنا", "icon": "","link":"/contact" }
 ]

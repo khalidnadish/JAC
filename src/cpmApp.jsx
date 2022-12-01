@@ -1,19 +1,32 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
+
+
+const keyf=keyframes`
+  0%{
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(-50%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+`;
+
+
+
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   position: relative;
-  
   min-width: 300px;
   width: 100%;
   max-height: 100vh;
   height: 100%;
-  /* margin:auto; */
   background-color: ${({ theme }) => theme.bgLighter};
-  
+  animation: ${keyf}  1s linear;
  z-index: 0;
 `;
 
@@ -42,9 +55,13 @@ const BodyWrapper = styled.div`
 
 
 
+
+
+
+
 const CallBtn = styled.div`
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content:center;
   align-items: center;
   position: fixed;
@@ -72,6 +89,7 @@ const LoaderWraper = styled.div`
   align-items: center;
   width:250px;
 height: 250px;
+ 
 position: relative;;
 background-image: url("/loaderLogo.png");
 background-repeat: no-repeat;
@@ -86,7 +104,7 @@ width: 100%;
 /* position: absolute;
 bottom:-90px;
 left:0px; */
-
+color: white;
  
 font-size:2rem;
 font-family: "tb";
@@ -97,6 +115,7 @@ font-family: "tb";
 `;
 const LogoTxtE = styled.p`
 width: 100%;
+color: white;
 /* position: absolute;
 bottom:-40px;
 left:0px; */

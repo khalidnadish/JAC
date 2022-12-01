@@ -12,32 +12,50 @@ const MainMenu = lazy(() => import("./component/menu/MainMenu"));
 const About = lazy(() => import("./pages/about/About"));
 const Contact = lazy(() => import("./pages/contact/Contact"));
 const ProductId = lazy(() => import("./pages/product/ProductId"));
-const SparePart = lazy(() => import("./pages/SparePart"));
+const Accessory = lazy(() => import("./pages/Accessory/Accessory"));
 const PageNotFound = lazy(() => import("./pages/404/PageNotFound"));
 const Product = lazy(() => import("./pages/product/Product"));
 const Footer = lazy(() => import("./component/footer/Footer"));
 const DezelEngine = lazy(() => import("./pages/product/Dezelengine"));
 const GezelEngine = lazy(() => import("./pages/product/Gezelengine"));
-
+import i18n from "./i18n";
 import cpm from "./cpmApp";
+
+const CallMe = () => {
+  return (
+    <>
+     <a href="tel:+966505622380">
+      <cpm.CallBtn>
+        <FiPhoneCall size={"1.3rem"} color="white" />
+      </cpm.CallBtn>
+       </a>
+    </>
+  );
+};
+
+
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [langDirection, setLangDirection] = useState("rtl");
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("ar");
   const [load, setLoad] = useState(false);
+  const [flag,setFlag] = useState("en.svg")
 
   useEffect(() => {
-    setLoad(true);
+    setLoad(pre=>true);
     setTimeout(() => {
-      setLoad(false);
-    }, 200);
+      setLoad(pre=>false);
+    }, 3000);
   }, []);
 
   useEffect(() => {
     document.body.dir = langDirection;
-    // i18n.changeLanguage("ar");
+    i18n.changeLanguage(language);
   }, [language]);
+
+
   return (
     <>
       {load ? (
@@ -45,15 +63,17 @@ function App() {
       ) : (
         <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
             <CssBaseline />
-            <CallMe />
             <cpm.Container>
-            {/* <Suspense fallback={<Loader />}> */}
+            <CallMe />
+            
               <BrowserRouter>
                 <cpm.BodyWrapper>
                   <MainMenu
                     setLangDirection={setLangDirection}
                     language={language}
                     setLanguage={setLanguage}
+                    flag={flag}
+                    setFlag={setFlag}
                   />
                   <Suspense fallback={<Loader />}>
                     <Routes>
@@ -69,7 +89,7 @@ function App() {
                           path="product/:id/:filesNO"
                           element={<ProductId />}
                         />
-                        <Route path="parePart" element={<SparePart />} />
+                        <Route path="accessory" element={<Accessory />} />
                         <Route path="*" element={<PageNotFound />} />
                       </Route>
                     </Routes>
@@ -77,7 +97,7 @@ function App() {
                   <Footer />
                 </cpm.BodyWrapper>
               </BrowserRouter>
-        {/* </Suspense> */}
+       
             </cpm.Container>
           </ThemeProvider>
       )}
@@ -98,15 +118,6 @@ function App() {
 }
 
 export default App;
-const CallMe = () => {
-  return (
-    <>
-      <cpm.CallBtn>
-        <FiPhoneCall size={"1.3rem"} color="white" />
-      </cpm.CallBtn>
-    </>
-  );
-};
 
 const LoadingApp = ({ load }) => {
   return (
@@ -115,8 +126,12 @@ const LoadingApp = ({ load }) => {
         <cpm.LoaderWraper>
           <ClimbingBoxLoader size={25} color={"#F37A24"} loading={load} />
         </cpm.LoaderWraper>
-        <cpm.LogoTxtA>موسسة سعيد الخريمي التجارية</cpm.LogoTxtA>
+        {/* <cpm.LogoTxtA>موسسة سعيد الخريمي التجارية</cpm.LogoTxtA>
         <cpm.LogoTxtE> Saeed Alkhuraimi Trading Est </cpm.LogoTxtE>
+         */}
+        <cpm.LogoTxtA>الخريمي التجارية</cpm.LogoTxtA>
+        <cpm.LogoTxtE>Alkhuraimi Trading</cpm.LogoTxtE>
+        
       </div>
     </>
   );

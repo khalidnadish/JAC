@@ -14,7 +14,7 @@ const LoadingApp = ({ load=true }) => {
     <>
       <div className="mainloader">
         <cpm.LoaderWraper>
-          <ClimbingBoxLoader size={25} color={"#F37A24"} loading={true} />
+          <ClimbingBoxLoader size={25} color={"#fa10bf"} loading={true} />
         </cpm.LoaderWraper>
         <cpm.LogoTxtA>موسسة سعيد الخريمي التجارية</cpm.LogoTxtA>
         <cpm.LogoTxtE> Saeed Alkhuraimi Trading Est </cpm.LogoTxtE>
@@ -27,12 +27,12 @@ const LoadingApp = ({ load=true }) => {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-  <Suspense fallback={<LoadingApp/>}>
+  {/* <Suspense fallback={<LoadingApp/>}> */}
   
   {/* <React.StrictMode> */}
     <App />
   {/* </React.StrictMode> */}
-  </Suspense>
+  {/* </Suspense> */}
   </>
 )
 
