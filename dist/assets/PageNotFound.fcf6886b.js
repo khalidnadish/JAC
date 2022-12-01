@@ -1,1 +1,0 @@
-import{$ as t,r as a,j as o}from"./index.4e3cfc23.js";function r(){const e=t();return a.exports.useEffect(()=>{setTimeout(()=>{e("/")},3e3)},[e]),o("div",{children:"PageNotFound"})}export{r as default};

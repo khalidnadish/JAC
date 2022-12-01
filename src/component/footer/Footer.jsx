@@ -13,6 +13,7 @@ function Footer() {
         
       </cpm.ImageWrpaer>
       <cpm.Txt>{t("contactInfo")}</cpm.Txt> 
+      agency
       </cpm.Wraper>
   )
 }
