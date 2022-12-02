@@ -1,5 +1,5 @@
 import { useState, lazy, Suspense, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route ,HashRouter} from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./component/utils/Theme";
 import { ToastContainer } from "react-toastify";
@@ -8,6 +8,7 @@ import Loader from "./component/loader/Loader";
 import CssBaseline from "@mui/material/CssBaseline";
 import { FiPhoneCall } from "react-icons/fi";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import Rescroll from "./component/utils/Rescroll"
 const MainMenu = lazy(() => import("./component/menu/MainMenu"));
 const About = lazy(() => import("./pages/about/About"));
 const Contact = lazy(() => import("./pages/contact/Contact"));
@@ -66,7 +67,7 @@ function App() {
             <cpm.Container>
             <CallMe />
             
-              <BrowserRouter>
+              <HashRouter>
                 <cpm.BodyWrapper>
                   <MainMenu
                     setLangDirection={setLangDirection}
@@ -76,6 +77,7 @@ function App() {
                     setFlag={setFlag}
                   />
                   <Suspense fallback={<Loader />}>
+                  <Rescroll>
                     <Routes>
                       <Route path="/">
                         <Route index element={<About />} />
@@ -93,10 +95,11 @@ function App() {
                         <Route path="*" element={<PageNotFound />} />
                       </Route>
                     </Routes>
+                    </Rescroll>
                   </Suspense>
                   <Footer />
                 </cpm.BodyWrapper>
-              </BrowserRouter>
+              </HashRouter>
        
             </cpm.Container>
           </ThemeProvider>
