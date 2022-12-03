@@ -6,7 +6,8 @@ function Footer() {
   return (
     <cpm.Wraper>
       <cpm.Agncy>
-        <cpm.Linemsg1>الوكيل والموزع جدة / منطقة مكة المكرمة</cpm.Linemsg1>
+
+        <cpm.Linemsg1>{t("agent")}</cpm.Linemsg1>
         <cpm.Txt>{t("footerData")}</cpm.Txt>
         <cpm.ImageWrpaer>
           <cpm.Image src="whitelogo.png" />
@@ -15,17 +16,21 @@ function Footer() {
       </cpm.Agncy>
       <cpm.SubAgncy>
 
+
+      
+
+
+
         
-        <cpm.Linemsg2>الشركاء الموزعين</cpm.Linemsg2>
-        <cpm.Txt> القصيم الدليمة </cpm.Txt>
-        <cpm.Txt> موسسة ابراهيم صالح الحربي للنقليات  جوال 0555150806 -- 0505150806</cpm.Txt>
+        <cpm.Linemsg2>{t("subagent")}</cpm.Linemsg2>
+        <cpm.Txt>{t("qasem")} </cpm.Txt>
+        <cpm.Txt>{t("qasemAdr")}</cpm.Txt>
         
         <hr/>
         
         <cpm.Hr />
-        <cpm.Txt> الرياض </cpm.Txt>
-        <cpm.Txt>  موسسة قمم القصور للمقاولات العامة 
-        جوال / 0542329273 </cpm.Txt>
+        <cpm.Txt> {t("ryd")} </cpm.Txt>
+        <cpm.Txt> {t("rydAdr")}</cpm.Txt>
         
        
 

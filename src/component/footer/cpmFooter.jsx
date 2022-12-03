@@ -40,6 +40,9 @@ const Linemsg1 = styled.div`
   background-color: green;
   border-radius: 8px;
   border: 1px solid white;
+  @media (max-width: 500px) {
+   font-size: .8rem;
+  }
 `;
 
 const Linemsg2 = styled.div`
@@ -51,6 +54,9 @@ const Linemsg2 = styled.div`
   background-color: #6d7457;
   border-radius: 8px;
   border: 1px solid white;
+  @media (max-width: 500px) {
+   font-size: .8rem;
+  }
 `;
 
 const Agncy = styled.div`
@@ -82,6 +88,9 @@ const SubAgncy = styled.div`
 const Txt = styled.p`
   padding: 1rem;
   font-size: 1.1rem;
+  @media (max-width: 500px) {
+   font-size: .8rem;
+  }
 `;
 export default {
   Wraper,

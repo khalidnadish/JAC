@@ -28,31 +28,43 @@ background-size: cover;
 const LogoTxtA = styled.p`
 
 position: absolute;
-bottom:5px;
+bottom:0px;
 left:${({langx})=>langx==="en" && "-300px"};
 right:${({langx})=>langx==="ar" && "-110px"};
-width: 250px;
+width: 100%;
+padding: 3px;
 display:block;
-font-size:.9rem;
-font-family: "tb";
-text-align: right;
+font-size:.8rem;
+font-family: "cb";
+/* text-align: right; */
+color: rgba(255,255,255,.6);
+background-color: rgba(55,55,55,.4);
+border-radius:4px;
+
 @media (max-width: 500px) {
- display:none;
-  
+ /* display:none; */
+ right:${({langx})=>langx==="ar" && "-5px"};
   }
 
 `;
 const LogoTxtE = styled.p`
 position: absolute;
 
-left:${({langx})=>langx==="en" && "-200px"};
-right:${({langx})=>langx==="ar" && "-210px"};
-width: 300px;
-bottom:17px;
-font-size:.9rem;
-font-family: "tb";
+/* left:${({langx})=>langx==="en" && "200px"}; */
+/* right:${({langx})=>langx==="ar" && "210px"}; */
+width: 100%;
+bottom:0px;
+padding: 3px;
+font-size:.7rem;
+font-family: "tr";
+color: rgba(255,255,255,.6);
+background-color: rgba(55,55,55,.4);
+border-radius:4px;
 @media (max-width: 500px) {
-  display:none;
+  /* display:none; */
+  /* right:${({langx})=>langx==="en" && "0"}; */
+  /* left:${({langx})=>langx==="en" && "-110px"}; */
+  bottom:0px;
   }
 `;
 
@@ -87,7 +99,7 @@ const lang=()=>{
   handleCloseNavMenu()
 }
   return (
-    <AppBar position="sticky" color="warning" sx={{zIndex:100 }}>
+    <AppBar position="sticky" color="warning" sx={{zIndex:100,borderRadius:1.5 }}>
       <Container maxWidth="xl" sx={{display:"flex",justifyContent:"space-between",}}>
         <Toolbar disableGutters >
           {/* ---------------------Moobilmenu Box Menu ---------------------- */}
@@ -203,8 +215,11 @@ const LOGO = ({language}) => {
     <>
       
         <LogoWraper>
-        <LogoTxtA langx={language}>الخريمي التجارية</LogoTxtA>
-        <LogoTxtE langx={language}>Alkhuraimi Trading</LogoTxtE>
+
+        {/* {language==="ar" ?  <LogoTxtA langx={language}>الخريمي التجارية</LogoTxtA>: <LogoTxtE langx={language}>Alkhuraimi Trading</LogoTxtE>} */}
+
+       
+       
         {/* <LogoTxtE langx={language}> Saeed Alkhuraimi Trading Est </LogoTxtE>
         <LogoTxtA langx={language}>موسسة سعيد الخريمي التجارية</LogoTxtA> */}
         </LogoWraper>
