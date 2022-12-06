@@ -86,7 +86,7 @@ const SubAgncy = styled.div`
 `;
 
 const Txt = styled.p`
-  padding: 1rem;
+  padding: .5rem 1rem;
   font-size: 1.1rem;
   @media (max-width: 500px) {
    font-size: .8rem;

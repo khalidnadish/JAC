@@ -101,6 +101,33 @@ export default function Prodct() {
           subtitle={prod.E3.name}
           description={t("electF")}
         />
+
+
+      <EMyCard
+          image={prod.A1.aboutPic}
+          // title={t("E3.title")}
+          subtitle={prod.A1.name}
+          description={t("accessory")}
+          chipColor={"success"}
+        />
+        
+      <EMyCard
+          image={prod.A2.aboutPic}
+          // title={t("E3.title")}
+          subtitle={prod.A2.name}
+          description={t("accessory")}
+          chipColor={"success"}
+        />
+        
+      <EMyCard
+          image={prod.A3.aboutPic}
+          // title={t("E3.title")}
+          subtitle={prod.A3.name}
+          description={t("accessory")}
+          chipColor={"success"}
+        />
+
+
         {/* <EMyCard
           image={prod.E4.aboutPic}
           title={t("E4.title")}
@@ -150,7 +177,7 @@ export default function Prodct() {
   );
 }
 
-const EMyCard = ({ image, title, subtitle, description ,borderColor}) => {
+const EMyCard = ({ image, title, subtitle, description ,chipColor="error"}) => {
   const { t } = useTranslation();
   return (
     <>
@@ -182,7 +209,7 @@ const EMyCard = ({ image, title, subtitle, description ,borderColor}) => {
               
             }}
           >
-            <Chip  variant="filled" color="error" label={description} sx={{fontFamily:"tb"}}/>
+            <Chip  variant="filled" color={chipColor} label={description} sx={{fontFamily:"tb"}}/>
             {subtitle}
             
           </Box>

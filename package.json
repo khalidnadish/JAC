@@ -10,6 +10,7 @@
     "predeply": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build && netlify deploy --prod",
+    "host": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {

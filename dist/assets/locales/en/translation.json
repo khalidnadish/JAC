@@ -16,14 +16,17 @@
   "msg":"Message",
   "sendBtn":"Send",
   "footerData":"Saeed AlKhuraimi Trading Ees  is the exclusive dealer of JAC vehicles in the Kingdom of Saudi Arabia. Through our extensive network, we provide a superior dealership experience.",
-  "contactInfo":"PO.BOX :6164   Zip Code : 21442 : Telephone  +966126604549  Mobile : +966505622380",
+  "contactInfo":"PO.BOX :6164   Zip Code : 21442",
+  "contactPhone":"Land: 0122899915  Mobile: 0505622380",
   "engine":"Engine",
   "agent":"Agent and distributor Jeddah / Makkah Al-Mukarramah region",
   "subagent":"Distributor partners",
   "qasem":"Al-Qassim Al-Dulaima",
-  "qasemAdr":"Ibrahim Saleh Al-Harbi Transport Corporation Mobile 0555150806 -- 0505150806",
+  "qasemAdr":"Ibrahim Saleh Al-Harbi Transport Corporation",
+  "qasemPhone":"Mobile: 0555150806 / 0505150806",
 "ryd":"Riyadh",
 "rydAdr":"Qamam Al-Qusour General Contracting Est. Mobile / 0542329273",
+"rydPhone":" Mobile: 0542329273",
 "mailconfirm":"Thank you .. We Will Contact You Soon .."
 
   

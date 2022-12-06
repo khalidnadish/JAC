@@ -18,7 +18,10 @@
 "E7": { "id": 7, "aboutPic": "/assets/product/E7/1.jpg", "name":"(2-3T Four Wheel Forklift, JE Series)" },
 "E8": { "id": 8, "aboutPic": "/assets/product/E8/1.jpg", "name":"(3-3.5T Four Wheel Forklift, J Series)" },
 "E9": { "id": 9, "aboutPic": "/assets/product/E9/1.jpg", "name":"(3-5T Four Wheel Forklift, HE Series)" },
-"E10": { "id": 10, "aboutPic": "/assets/product/E10/1.jpg", "name":"(4-6T Four Wheel Forklift, S Series)" }
+"E10": { "id": 10, "aboutPic": "/assets/product/E10/1.jpg", "name":"(4-6T Four Wheel Forklift, S Series)" },
+"A1": { "id": 1, "aboutPic": "/assets/product/Accessory/13.png", "name":"Clamps" },
+"A2": { "id": 2, "aboutPic": "/assets/product/Accessory/2.png", "name":"Fork Posmoners" },
+"A3": { "id": 3, "aboutPic": "/assets/product/Accessory/10.png", "name":"Olecranon Drum Clamps" }
 }
 
 

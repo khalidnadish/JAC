@@ -16,12 +16,12 @@ import styled from "styled-components";
 import i18n from "../../i18n";
 const LogoWraper = styled.div`
 max-width: 300px;
-width:100px;
-height: 70px;
+width:100%;
+/* height: 60px; */
 position: relative;;
-background-image: url("/Wb2.png");
+background-image: url("/jaclogo.svg");
 background-repeat: no-repeat;
-background-size: cover;
+background-size: contain;
 `;
 
 
